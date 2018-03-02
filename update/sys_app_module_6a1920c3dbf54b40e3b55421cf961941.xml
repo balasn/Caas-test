@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="RISC NETWORKS">92a05638dba54f00e3b55421cf9619d5</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>RISC Network Infrastructures</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_riscn_risc_netwo_risc_network_infrastructure</name>
+        <order>160</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_riscn_risc_netwo.user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>girishgyani</sys_created_by>
+        <sys_created_on>2017-10-18 12:45:04</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6a1920c3dbf54b40e3b55421cf961941</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>RISC Network Infrastructures</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+        <sys_update_name>sys_app_module_6a1920c3dbf54b40e3b55421cf961941</sys_update_name>
+        <sys_updated_by>mumtaz.ansari</sys_updated_by>
+        <sys_updated_on>2017-11-03 10:51:13</sys_updated_on>
+        <timeline_page/>
+        <title>RISC Network Infrastructures</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

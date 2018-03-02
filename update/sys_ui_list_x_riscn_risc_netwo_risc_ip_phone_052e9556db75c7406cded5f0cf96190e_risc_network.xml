@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="x_riscn_risc_netwo_risc_ip_phone" relationship="052e9556db75c7406cded5f0cf96190e" sys_domain="global" table="x_riscn_risc_netwo_risc_ips" version="2" view="risc_network">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>device_id</element>
+            <list_id display_value="x_riscn_risc_netwo_risc_ips" element="NULL" name="x_riscn_risc_netwo_risc_ips" parent="x_riscn_risc_netwo_risc_ip_phone" relationship="052e9556db75c7406cded5f0cf96190e" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">a4e6406cdb3a0b00e3b55421cf961933</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-29 08:53:33</sys_created_on>
+            <sys_id>2ce6406cdb3a0b00e3b55421cf961933</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-29 08:53:33</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>ip</element>
+            <list_id display_value="x_riscn_risc_netwo_risc_ips" element="NULL" name="x_riscn_risc_netwo_risc_ips" parent="x_riscn_risc_netwo_risc_ip_phone" relationship="052e9556db75c7406cded5f0cf96190e" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">a4e6406cdb3a0b00e3b55421cf961933</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-29 08:53:33</sys_created_on>
+            <sys_id>ace6406cdb3a0b00e3b55421cf961933</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-29 08:53:33</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_riscn_risc_netwo_risc_ips</name>
+            <parent>x_riscn_risc_netwo_risc_ip_phone</parent>
+            <position/>
+            <relationship display_value="IPs">052e9556db75c7406cded5f0cf96190e</relationship>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-29 08:53:33</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a4e6406cdb3a0b00e3b55421cf961933</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_riscn_risc_netwo_risc_ips</sys_name>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_list_x_riscn_risc_netwo_risc_ip_phone_052e9556db75c7406cded5f0cf96190e_risc_network</sys_update_name>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-29 08:53:33</sys_updated_on>
+            <sys_user/>
+            <view display_value="RISC Network" name="risc_network">3fb85295dbde4700e3b55421cf9619a9</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <format>png</format>
+        <height>100</height>
+        <image/>
+        <name>RISC_Logo.png</name>
+        <size_bytes>2506</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>mumtaz.ansari</sys_created_by>
+        <sys_created_on>2017-10-18 09:53:14</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a9a1404fdb354b40e3b55421cf961985</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>RISC_Logo.png</sys_name>
+        <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+        <sys_update_name>db_image_a9a1404fdb354b40e3b55421cf961985</sys_update_name>
+        <sys_updated_by>mumtaz.ansari</sys_updated_by>
+        <sys_updated_on>2017-10-18 09:53:26</sys_updated_on>
+        <thumbnail/>
+        <width>570</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#ffffff</average_image_color>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>image</file_name>
+        <image_height>100</image_height>
+        <image_width>570</image_width>
+        <size_bytes>2506</size_bytes>
+        <size_compressed>2509</size_compressed>
+        <sys_created_by>mumtaz.ansari</sys_created_by>
+        <sys_created_on>2017-10-18 09:53:26</sys_created_on>
+        <sys_id>54d10c0fdb354b40e3b55421cf9619f5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>mumtaz.ansari</sys_updated_by>
+        <sys_updated_on>2017-10-18 09:53:26</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>a9a1404fdb354b40e3b55421cf961985</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="54d10c0fdb354b40e3b55421cf9619f5">54d10c0fdb354b40e3b55421cf9619f5</sys_attachment>
+        <sys_created_by>mumtaz.ansari</sys_created_by>
+        <sys_created_on>2017-10-18 09:53:26</sys_created_on>
+        <sys_id>14d1c04fdb354b40e3b55421cf96193a</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>3332</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="54d10c0fdb354b40e3b55421cf9619f5">54d10c0fdb354b40e3b55421cf9619f5</sys_attachment>
+        <sys_created_by>mumtaz.ansari</sys_created_by>
+        <sys_created_on>2017-10-18 09:53:26</sys_created_on>
+        <sys_id>94d1c04fdb354b40e3b55421cf96193a</sys_id>
+    </sys_attachment_doc>
+</record_update>

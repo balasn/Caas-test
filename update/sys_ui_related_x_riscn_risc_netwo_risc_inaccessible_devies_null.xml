@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_related sys_domain="global" table="x_riscn_risc_netwo_risc_inaccessible_devies" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Inaccessible Devices - Default view" name="x_riscn_risc_netwo_risc_inaccessible_devies" related_list="NULL" sys_domain="global" view="Default view">6d55b593dbd64f00e3b55421cf961997</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>REL:54c12525db4e03006cded5f0cf9619ea</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-13 09:28:02</sys_created_on>
+            <sys_id>a155f117db1a4f00e3b55421cf9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-13 09:28:02</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Inaccessible Devices - Default view" name="x_riscn_risc_netwo_risc_inaccessible_devies" related_list="NULL" sys_domain="global" view="Default view">6d55b593dbd64f00e3b55421cf961997</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>REL:e3e069e1db4e03006cded5f0cf961907</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-13 09:28:02</sys_created_on>
+            <sys_id>a555f117db1a4f00e3b55421cf9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-13 09:28:02</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Inaccessible Devices - Default view" name="x_riscn_risc_netwo_risc_inaccessible_devies" related_list="NULL" sys_domain="global" view="Default view">6d55b593dbd64f00e3b55421cf961997</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>REL:9619812bdbc2cb00e3b55421cf9619c6</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-13 09:28:02</sys_created_on>
+            <sys_id>a955f117db1a4f00e3b55421cf9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-13 09:28:02</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Inaccessible Devices - Default view" name="x_riscn_risc_netwo_risc_inaccessible_devies" related_list="NULL" sys_domain="global" view="Default view">6d55b593dbd64f00e3b55421cf961997</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>REL:b392defbdbca0f00e3b55421cf96194c</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-13 09:28:02</sys_created_on>
+            <sys_id>ad55f117db1a4f00e3b55421cf9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-13 09:28:02</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Inaccessible Devices - Default view" name="x_riscn_risc_netwo_risc_inaccessible_devies" related_list="NULL" sys_domain="global" view="Default view">6d55b593dbd64f00e3b55421cf961997</list_id>
+            <order_by/>
+            <position>4</position>
+            <related_list>REL:17e45d4adb520b00e3b55421cf96197c</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-13 09:28:02</sys_created_on>
+            <sys_id>a155f117db1a4f00e3b55421cf9619fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-13 09:28:02</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>RISC Inaccessible Devices - Default view</calculated_name>
+            <filter/>
+            <name>x_riscn_risc_netwo_risc_inaccessible_devies</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-13 09:28:02</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6d55b593dbd64f00e3b55421cf961997</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>RISC Inaccessible Devices - Default view</sys_name>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_related_x_riscn_risc_netwo_risc_inaccessible_devies_null</sys_update_name>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-13 09:28:02</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

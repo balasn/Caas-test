@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC Devices Relationship Data" max_length="40" name="x_riscn_risc_netwo_risc_devices_relationship_data" type="collection">
+        <element label="Device Id" max_length="40" name="device_id" type="string"/>
+        <element label="Device Type" max_length="40" name="device_type" type="string"/>
+        <element label="Payload" max_length="1048576" name="payload" type="string"/>
+    </element>
+</database>

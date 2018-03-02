@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="904f93a8db310740e3b55421cf9619b4" sys_domain="global" table="x_riscn_risc_netwo_risc_windows_servers" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-10-11 07:36:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>584f93a8db310740e3b55421cf9619b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_windows_servers" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="d62ead22df100100cd7da5f59bf26356">904f93a8db310740e3b55421cf9619b4</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="d62ead22df100100cd7da5f59bf26356">584f93a8db310740e3b55421cf9619b6</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-10-11 07:36:05</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-10-11 07:36:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>904f93a8db310740e3b55421cf9619bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_windows_servers" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="d62ead22df100100cd7da5f59bf26356">904f93a8db310740e3b55421cf9619b4</sys_ui_form>
+            <sys_ui_section caption="Configuration" display_value="Configuration" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="d62ead22df100100cd7da5f59bf26356">d04f93a8db310740e3b55421cf9619b9</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-10-11 07:36:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_riscn_risc_netwo_risc_windows_servers</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-10-11 07:36:05</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>904f93a8db310740e3b55421cf9619b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_riscn_risc_netwo_risc_windows_servers</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_form_sections_904f93a8db310740e3b55421cf9619b4</sys_update_name>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-10-11 07:36:05</sys_updated_on>
+            <sys_user/>
+            <view display_value="Compliance" name="certification">d62ead22df100100cd7da5f59bf26356</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

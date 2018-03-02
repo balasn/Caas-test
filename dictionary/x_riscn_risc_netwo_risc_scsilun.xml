@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC SCSILUN" max_length="40" name="x_riscn_risc_netwo_risc_scsilun" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Canonical Name" max_length="100" name="canonicalname" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device ID" max_length="100" name="deviceid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device Type" max_length="100" name="device_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Display Name" max_length="100" name="displayname" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Luntype" max_length="100" name="luntype" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Model" max_length="100" name="model" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Operational State" max_length="40" name="operationalstate" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Queue Depth" max_length="40" name="queuedepth" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="SCSI Key" max_length="100" name="scsikey" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="SCSI Level" max_length="100" name="scsilevel" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Serial Number" max_length="100" name="serialnumber" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Vendor" max_length="100" name="vendor" type="string"/>
+    </element>
+</database>

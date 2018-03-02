@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_riscn_risc_netwo.RISC_Queue_Util</api_name>
+        <client_callable>false</client_callable>
+        <description>This script is used for inserting and deletinf from queue table. Inserting into relationship table for relationship from RISC Relationship script and other util fumctions.</description>
+        <name>RISC_Queue_Util</name>
+        <script><![CDATA[var RISC_Queue_Util = Class.create();
+RISC_Queue_Util.prototype = {
+	initialize: function() {
+		this.loggr = new RISCLogger();
+	},
+	
+	insertIntoRelationshipTable : function(id, type, payload){
+		this.loggr.debug('Inside RISC_Queue_Util.insertIntoRelationshipTable().');
+		try{
+			var gr = new GlideRecord('x_riscn_risc_netwo_risc_devices_relationship_data');
+			gr.initialize();
+			gr.device_type = type;
+			gr.device_id = id;
+			gr.payload = payload;
+			gr.insert();	
+		}catch(e){
+			this.loggr.error('Error Caught inside RISC_Queue_Util.insertIntoRelationshipTable(). Error:- '+e);
+		}
+	},
+	
+	insertIntoQueue : function(device, type, payload, method, body){
+		this.loggr.debug('Inside RISC_Queue_Util.insertIntoQueue().');
+		try{
+			var gr = new GlideRecord('x_riscn_risc_netwo_risc_queue');
+			gr.initialize();
+			gr.device_type = device;
+			gr.type = type;
+			gr.payload = payload;
+			gr.method = method;
+			gr.body = body;
+			gr.state = 'Ready';
+			gr.insert();	
+		}catch(e){
+			this.loggr.error('Error Caught inside RISC_Queue_Util.insertIntoQueue(). Error:- '+e);
+		}
+		
+	},
+	
+	wait: function(time){
+		this.loggr.debug('Inside RISC_Queue_Util.wait().');
+		try{
+			var t1 = new GlideDateTime().getNumericValue();
+			var t2 = new GlideDateTime().getNumericValue();
+			var duration = t2 - t1;
+			while(duration < time){
+				t2 = new GlideDateTime().getNumericValue();
+				duration = t2 - t1;
+			}	
+		}catch(e){
+			this.loggr.error('Error caught inside RISC_Queue_Util.wait(). Error:- '+e);
+		}
+		
+	},
+	
+	deleteQueue: function(){
+		this.loggr.debug('Inside RISC_Queue_Util.deleteQueue().');
+		try{
+			var gr = new GlideRecord('x_riscn_risc_netwo_risc_queue');
+			gr.setWorkflow(false);
+			gr.deleteMultiple();
+		}catch(e){
+			this.loggr.error('Error caught inside RISC_Queue_Util.deleteQueue(). Error:- '+e);
+		}
+		
+		
+	},
+	
+	type: 'RISC_Queue_Util'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-30 10:55:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5dd2427edbc607006cded5f0cf96192c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>RISC_Queue_Util</sys_name>
+        <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+        <sys_update_name>sys_script_include_5dd2427edbc607006cded5f0cf96192c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-18 15:33:35</sys_updated_on>
+    </sys_script_include>
+</record_update>

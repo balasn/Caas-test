@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="update_synch=true" extends="sys_metadata" label="Customer Configuration" max_length="40" name="x_riscn_risc_netwo_customer_configuration" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="API Key" max_length="40" name="api_key" type="string"/>
+        <element label="Assessment Code" max_length="40" name="assessment_code" type="string"/>
+        <element label="Host API URL" max_length="40" name="host_api_url" type="string"/>
+        <element label="Password" max_length="255" name="password" type="password2"/>
+        <element display="true" label="UserName" max_length="40" name="user_id" type="string"/>
+    </element>
+</database>

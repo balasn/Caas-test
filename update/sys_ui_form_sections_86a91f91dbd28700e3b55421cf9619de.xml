@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="86a91f91dbd28700e3b55421cf9619de" sys_domain="global" table="x_riscn_risc_netwo_risc_windows_servers" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-07 11:38:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>02a91f91dbd28700e3b55421cf9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_windows_servers" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">86a91f91dbd28700e3b55421cf9619de</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">ef8997d1dbd28700e3b55421cf96195b</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-07 11:38:29</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-07 11:38:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>16a91bd1dbd28700e3b55421cf9619e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_windows_servers" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">86a91f91dbd28700e3b55421cf9619de</sys_ui_form>
+            <sys_ui_section caption="Operating System Details" display_value="Operating System Details" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">0aa91bd1dbd28700e3b55421cf9619df</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-07 11:38:29</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-07 11:39:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>80d91bd1dbd28700e3b55421cf961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_windows_servers" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">86a91f91dbd28700e3b55421cf9619de</sys_ui_form>
+            <sys_ui_section caption="Hardware Details" display_value="Hardware Details" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">04d91bd1dbd28700e3b55421cf961973</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-07 11:39:10</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-07 11:39:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>33e9d7d1dbd28700e3b55421cf961919</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_windows_servers" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">86a91f91dbd28700e3b55421cf9619de</sys_ui_form>
+            <sys_ui_section caption="CPU Details" display_value="CPU Details" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">ffe9d7d1dbd28700e3b55421cf961916</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-07 11:39:41</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-18 11:45:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a07422eedb0b47406cded5f0cf9619ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_windows_servers" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">86a91f91dbd28700e3b55421cf9619de</sys_ui_form>
+            <sys_ui_section caption="Hardware Lifecycle" display_value="Hardware Lifecycle" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">ac7422eedb0b47406cded5f0cf9619e6</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-18 11:45:29</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-19 08:36:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8cb2cbbedbcfc340e3b55421cf96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_windows_servers" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">86a91f91dbd28700e3b55421cf9619de</sys_ui_form>
+            <sys_ui_section caption="OS Lifecycle" display_value="OS Lifecycle" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">0cb2cbbedbcfc340e3b55421cf961997</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-19 08:36:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>6</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:35:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0ad8d93ddb538b40e3b55421cf961987</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_windows_servers" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">86a91f91dbd28700e3b55421cf9619de</sys_ui_form>
+            <sys_ui_section caption="CI Relations" display_value="CI Relations" name="x_riscn_risc_netwo_risc_windows_servers" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">ced8d93ddb538b40e3b55421cf961984</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:35:26</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_riscn_risc_netwo_risc_windows_servers</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-07 11:38:29</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>86a91f91dbd28700e3b55421cf9619de</sys_id>
+            <sys_mod_count>19</sys_mod_count>
+            <sys_name>x_riscn_risc_netwo_risc_windows_servers</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_form_sections_86a91f91dbd28700e3b55421cf9619de</sys_update_name>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2018-01-08 08:35:34</sys_updated_on>
+            <sys_user/>
+            <view display_value="RISC Network" name="risc_network">3fb85295dbde4700e3b55421cf9619a9</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

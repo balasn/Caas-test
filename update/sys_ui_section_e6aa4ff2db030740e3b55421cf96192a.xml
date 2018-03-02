@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="OS Lifecycle" section_id="e6aa4ff2db030740e3b55421cf96192a" sys_domain="global" table="x_riscn_risc_netwo_risc_linux_unix_device" version="3" view="risc_network">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>os_bulletin_url</element>
+            <position>0</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-19 09:11:01</sys_created_on>
+            <sys_id>97aa4ff2db030740e3b55421cf9619b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="OS Lifecycle" display_value="OS Lifecycle" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">e6aa4ff2db030740e3b55421cf96192a</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-19 09:11:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>end_of_mainstream_support</element>
+            <position>1</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-19 09:11:01</sys_created_on>
+            <sys_id>9faa4ff2db030740e3b55421cf9619b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="OS Lifecycle" display_value="OS Lifecycle" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">e6aa4ff2db030740e3b55421cf96192a</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-19 09:11:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>os_lifecycle_start_date</element>
+            <position>2</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-19 09:11:01</sys_created_on>
+            <sys_id>13aa4ff2db030740e3b55421cf9619b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="OS Lifecycle" display_value="OS Lifecycle" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">e6aa4ff2db030740e3b55421cf96192a</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-19 09:11:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>os_os</element>
+            <position>3</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-19 09:11:01</sys_created_on>
+            <sys_id>93aa4ff2db030740e3b55421cf9619b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="OS Lifecycle" display_value="OS Lifecycle" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">e6aa4ff2db030740e3b55421cf96192a</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-19 09:11:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-19 09:11:01</sys_created_on>
+            <sys_id>17aa4ff2db030740e3b55421cf9619b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="OS Lifecycle" display_value="OS Lifecycle" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">e6aa4ff2db030740e3b55421cf96192a</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-19 09:11:01</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>os_end_of_extended_support</element>
+            <position>5</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-19 09:11:01</sys_created_on>
+            <sys_id>97aa4ff2db030740e3b55421cf9619b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="OS Lifecycle" display_value="OS Lifecycle" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">e6aa4ff2db030740e3b55421cf96192a</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-19 09:11:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>os_hardware_model</element>
+            <position>6</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-19 09:11:01</sys_created_on>
+            <sys_id>1baa4ff2db030740e3b55421cf9619b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="OS Lifecycle" display_value="OS Lifecycle" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">e6aa4ff2db030740e3b55421cf96192a</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-19 09:11:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>os_lifecycle_status</element>
+            <position>7</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-19 09:11:01</sys_created_on>
+            <sys_id>9baa4ff2db030740e3b55421cf9619b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="OS Lifecycle" display_value="OS Lifecycle" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">e6aa4ff2db030740e3b55421cf96192a</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-19 09:11:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>OS Lifecycle</caption>
+            <header>false</header>
+            <name>x_riscn_risc_netwo_risc_linux_unix_device</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-19 09:10:57</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e6aa4ff2db030740e3b55421cf96192a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>OS Lifecycle</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_section_e6aa4ff2db030740e3b55421cf96192a</sys_update_name>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-19 09:10:57</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="RISC Network" name="risc_network">3fb85295dbde4700e3b55421cf9619a9</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

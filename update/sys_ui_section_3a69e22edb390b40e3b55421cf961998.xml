@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="3a69e22edb390b40e3b55421cf961998" sys_domain="global" table="x_riscn_risc_netwo_risc_linux_unix_device" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>0</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>307c3da0db860f40e3b55421cf9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset_tag</element>
+            <position>1</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>b07c3da0db860f40e3b55421cf9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>manufacturer</element>
+            <position>2</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>347c3da0db860f40e3b55421cf9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset</element>
+            <position>3</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>b47c3da0db860f40e3b55421cf9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>b87c3da0db860f40e3b55421cf9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>company</element>
+            <position>6</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>3c7c3da0db860f40e3b55421cf9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>serial_number</element>
+            <position>7</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>bc7c3da0db860f40e3b55421cf9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>model_id</element>
+            <position>8</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>307c3da0db860f40e3b55421cf9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>9</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>b07c3da0db860f40e3b55421cf9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>10</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>347c3da0db860f40e3b55421cf9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>collection_type</element>
+            <position>11</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>b47c3da0db860f40e3b55421cf9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpu_architecture</element>
+            <position>12</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>387c3da0db860f40e3b55421cf9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpu_model</element>
+            <position>13</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>b87c3da0db860f40e3b55421cf9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>deviceid</element>
+            <position>14</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>3c7c3da0db860f40e3b55421cf9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>devicetype</element>
+            <position>15</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>bc7c3da0db860f40e3b55421cf9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dist_full</element>
+            <position>16</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>307c3da0db860f40e3b55421cf9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hardware_model</element>
+            <position>17</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>b07c3da0db860f40e3b55421cf9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hardware_vendor</element>
+            <position>18</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>347c3da0db860f40e3b55421cf9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>exs_host</element>
+            <position>19</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>b47c3da0db860f40e3b55421cf9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>guest_name</element>
+            <position>20</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>387c3da0db860f40e3b55421cf9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>guest_os</element>
+            <position>21</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>b87c3da0db860f40e3b55421cf9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>power_state</element>
+            <position>22</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>3c7c3da0db860f40e3b55421cf9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>tool_status</element>
+            <position>23</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>bc7c3da0db860f40e3b55421cf9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>uuid</element>
+            <position>24</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-23 10:40:07</sys_created_on>
+            <sys_id>307c3da0db860f40e3b55421cf9619f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-23 10:40:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpu_frequency</element>
+            <position>25</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-24 13:20:02</sys_created_on>
+            <sys_id>99aaabf4dbc24f406cded5f0cf96194a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-10-24 13:20:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpu_reservation</element>
+            <position>26</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-24 13:20:30</sys_created_on>
+            <sys_id>ffbaab38dbc24f406cded5f0cf9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-10-24 13:20:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>tag_ids</element>
+            <position>27</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-27 07:18:24</sys_created_on>
+            <sys_id>8da47d3ddb4e43006cded5f0cf961977</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="Default view">3a69e22edb390b40e3b55421cf961998</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-27 07:18:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_riscn_risc_netwo_risc_linux_unix_device</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-10-17 08:48:43</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3a69e22edb390b40e3b55421cf961998</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_riscn_risc_netwo_risc_linux_unix_device</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_section_3a69e22edb390b40e3b55421cf961998</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-10-17 08:48:43</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

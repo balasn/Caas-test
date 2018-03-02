@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="x_riscn_risc_netwo_risc_virtual_machines" relationship="3f3a72bedb060b00e3b55421cf9619d3" sys_domain="global" table="x_riscn_risc_netwo_risc_network_interface" version="2" view="risc_network">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>device_id</element>
+            <list_id display_value="x_riscn_risc_netwo_risc_network_interface" element="NULL" name="x_riscn_risc_netwo_risc_network_interface" parent="x_riscn_risc_netwo_risc_virtual_machines" relationship="3f3a72bedb060b00e3b55421cf9619d3" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">fa692d1bdbcf0740e3b55421cf9619a4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-20 15:23:03</sys_created_on>
+            <sys_id>f6692d1bdbcf0740e3b55421cf9619a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-20 15:23:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>admin_status</element>
+            <list_id display_value="x_riscn_risc_netwo_risc_network_interface" element="NULL" name="x_riscn_risc_netwo_risc_network_interface" parent="x_riscn_risc_netwo_risc_virtual_machines" relationship="3f3a72bedb060b00e3b55421cf9619d3" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">fa692d1bdbcf0740e3b55421cf9619a4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-20 15:23:03</sys_created_on>
+            <sys_id>be692d1bdbcf0740e3b55421cf9619a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-20 15:23:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>description</element>
+            <list_id display_value="x_riscn_risc_netwo_risc_network_interface" element="NULL" name="x_riscn_risc_netwo_risc_network_interface" parent="x_riscn_risc_netwo_risc_virtual_machines" relationship="3f3a72bedb060b00e3b55421cf9619d3" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">fa692d1bdbcf0740e3b55421cf9619a4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-20 15:23:03</sys_created_on>
+            <sys_id>32692d1bdbcf0740e3b55421cf9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-20 15:23:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>oper_status</element>
+            <list_id display_value="x_riscn_risc_netwo_risc_network_interface" element="NULL" name="x_riscn_risc_netwo_risc_network_interface" parent="x_riscn_risc_netwo_risc_virtual_machines" relationship="3f3a72bedb060b00e3b55421cf9619d3" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">fa692d1bdbcf0740e3b55421cf9619a4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-20 15:23:03</sys_created_on>
+            <sys_id>b2692d1bdbcf0740e3b55421cf9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-20 15:23:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>speed</element>
+            <list_id display_value="x_riscn_risc_netwo_risc_network_interface" element="NULL" name="x_riscn_risc_netwo_risc_network_interface" parent="x_riscn_risc_netwo_risc_virtual_machines" relationship="3f3a72bedb060b00e3b55421cf9619d3" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">fa692d1bdbcf0740e3b55421cf9619a4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-20 15:23:03</sys_created_on>
+            <sys_id>36692d1bdbcf0740e3b55421cf9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-20 15:23:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>type</element>
+            <list_id display_value="x_riscn_risc_netwo_risc_network_interface" element="NULL" name="x_riscn_risc_netwo_risc_network_interface" parent="x_riscn_risc_netwo_risc_virtual_machines" relationship="3f3a72bedb060b00e3b55421cf9619d3" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">fa692d1bdbcf0740e3b55421cf9619a4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-20 15:23:03</sys_created_on>
+            <sys_id>b6692d1bdbcf0740e3b55421cf9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-20 15:23:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>connected</element>
+            <list_id display_value="x_riscn_risc_netwo_risc_network_interface" element="NULL" name="x_riscn_risc_netwo_risc_network_interface" parent="x_riscn_risc_netwo_risc_virtual_machines" relationship="3f3a72bedb060b00e3b55421cf9619d3" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">fa692d1bdbcf0740e3b55421cf9619a4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-20 15:23:03</sys_created_on>
+            <sys_id>3a692d1bdbcf0740e3b55421cf9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-20 15:23:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>mac</element>
+            <list_id display_value="x_riscn_risc_netwo_risc_network_interface" element="NULL" name="x_riscn_risc_netwo_risc_network_interface" parent="x_riscn_risc_netwo_risc_virtual_machines" relationship="3f3a72bedb060b00e3b55421cf9619d3" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">fa692d1bdbcf0740e3b55421cf9619a4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-20 15:23:03</sys_created_on>
+            <sys_id>ba692d1bdbcf0740e3b55421cf9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-20 15:23:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>network</element>
+            <list_id display_value="x_riscn_risc_netwo_risc_network_interface" element="NULL" name="x_riscn_risc_netwo_risc_network_interface" parent="x_riscn_risc_netwo_risc_virtual_machines" relationship="3f3a72bedb060b00e3b55421cf9619d3" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">fa692d1bdbcf0740e3b55421cf9619a4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-20 15:23:03</sys_created_on>
+            <sys_id>3e692d1bdbcf0740e3b55421cf9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-20 15:23:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>ips</element>
+            <list_id display_value="x_riscn_risc_netwo_risc_network_interface" element="NULL" name="x_riscn_risc_netwo_risc_network_interface" parent="x_riscn_risc_netwo_risc_virtual_machines" relationship="3f3a72bedb060b00e3b55421cf9619d3" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">fa692d1bdbcf0740e3b55421cf9619a4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-20 15:23:03</sys_created_on>
+            <sys_id>be692d1bdbcf0740e3b55421cf9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-20 15:23:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_riscn_risc_netwo_risc_network_interface</name>
+            <parent>x_riscn_risc_netwo_risc_virtual_machines</parent>
+            <position/>
+            <relationship display_value="Interfaces">3f3a72bedb060b00e3b55421cf9619d3</relationship>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-20 15:23:03</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fa692d1bdbcf0740e3b55421cf9619a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_riscn_risc_netwo_risc_network_interface</sys_name>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_list_x_riscn_risc_netwo_risc_virtual_machines_3f3a72bedb060b00e3b55421cf9619d3_risc_network</sys_update_name>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-20 15:23:03</sys_updated_on>
+            <sys_user/>
+            <view display_value="RISC Network" name="risc_network">3fb85295dbde4700e3b55421cf9619a9</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

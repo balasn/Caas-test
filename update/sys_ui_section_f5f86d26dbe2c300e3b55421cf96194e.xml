@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="f5f86d26dbe2c300e3b55421cf96194e" sys_domain="global" table="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>collection_type</element>
+            <position>0</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>39f86d26dbe2c300e3b55421cf96194f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>deviceid</element>
+            <position>1</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>31f86d26dbe2c300e3b55421cf961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>devicetype</element>
+            <position>2</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>b1f86d26dbe2c300e3b55421cf961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpu_count</element>
+            <position>3</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>35f86d26dbe2c300e3b55421cf961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpu_frequency</element>
+            <position>4</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>b5f86d26dbe2c300e3b55421cf961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpu_frequqency</element>
+            <position>5</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>39f86d26dbe2c300e3b55421cf961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpu_model</element>
+            <position>6</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>b9f86d26dbe2c300e3b55421cf961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpu_reservation</element>
+            <position>7</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>3df86d26dbe2c300e3b55421cf961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpu_architecture</element>
+            <position>8</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>bdf86d26dbe2c300e3b55421cf961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>guest_name</element>
+            <position>9</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>31f86d26dbe2c300e3b55421cf961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>guest_os</element>
+            <position>10</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>b1f86d26dbe2c300e3b55421cf961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hardware_model</element>
+            <position>11</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>35f86d26dbe2c300e3b55421cf961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hardware_serial</element>
+            <position>12</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>b5f86d26dbe2c300e3b55421cf961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>13</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>39f86d26dbe2c300e3b55421cf961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hardware_vendor</element>
+            <position>14</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>b9f86d26dbe2c300e3b55421cf961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>licensed</element>
+            <position>16</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>39f82166dbe2c300e3b55421cf9619b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>memory</element>
+            <position>17</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>b9f82166dbe2c300e3b55421cf9619b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>os</element>
+            <position>18</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>3df82166dbe2c300e3b55421cf9619b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>os_version</element>
+            <position>19</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>bdf82166dbe2c300e3b55421cf9619b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>power_state</element>
+            <position>20</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>31f82166dbe2c300e3b55421cf9619b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_pack</element>
+            <position>21</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>b1f82166dbe2c300e3b55421cf9619b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>esx_host</element>
+            <position>22</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>35f82166dbe2c300e3b55421cf9619b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>stacks</element>
+            <position>23</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>b5f82166dbe2c300e3b55421cf9619b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>tags</element>
+            <position>24</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>39f82166dbe2c300e3b55421cf9619b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>tool_status</element>
+            <position>25</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>b9f82166dbe2c300e3b55421cf9619b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>uuid</element>
+            <position>26</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>3df82166dbe2c300e3b55421cf9619b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dist_full</element>
+            <position>27</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>bdf82166dbe2c300e3b55421cf9619b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>generic_device_type</element>
+            <position>28</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>31f82166dbe2c300e3b55421cf9619ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpuhz</element>
+            <position>29</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>b1f82166dbe2c300e3b55421cf9619ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>30</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>35f82166dbe2c300e3b55421cf9619ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>version</element>
+            <position>31</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>b5f82166dbe2c300e3b55421cf9619ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>versiondetail</element>
+            <position>32</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_id>39f82166dbe2c300e3b55421cf9619ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" sys_domain="global" view="Default view">f5f86d26dbe2c300e3b55421cf96194e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-23 10:54:14</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f5f86d26dbe2c300e3b55421cf96194e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_section_f5f86d26dbe2c300e3b55421cf96194e</sys_update_name>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-23 10:54:14</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

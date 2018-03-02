@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_riscn_risc_netwo_risc_windows_workstations</basic_apply_to>
+        <basic_query_from>x_riscn_risc_netwo_risc_ips</basic_query_from>
+        <insert_callback/>
+        <name>IPs</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+	
+	// Add your code here, such as current.addQuery(field, value);
+	current.addQuery('device_id',parent.device_id);
+	
+	//current.addEncodedQuery('device_idLIKE'+parent.device_id+'^devicetype=Windows Workstations');
+})(current, parent);]]></query_with>
+        <reference_field/>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>mumtaz.ansari</sys_created_by>
+        <sys_created_on>2017-10-31 06:13:59</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>d04c0e0bdbce0b00e3b55421cf9619d0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>IPs</sys_name>
+        <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+        <sys_update_name>sys_relationship_d04c0e0bdbce0b00e3b55421cf9619d0</sys_update_name>
+        <sys_updated_by>mumtaz.ansari</sys_updated_by>
+        <sys_updated_on>2017-11-27 11:26:05</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=d04c0e0bdbce0b00e3b55421cf9619d0"/>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC Windows Server Disks" max_length="40" name="x_riscn_risc_netwo_risc_windows_server_disks" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Device ID" max_length="100" name="deviceid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device Type" max_length="100" name="devicetype" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk Tracks Per Cylinder" max_length="100" name="disck_tracks_per_cylinder" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk Cylider Count" max_length="100" name="disk_cylider_count" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk Device ID" max_length="100" name="disk_deviceid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk Headcount" max_length="100" name="disk_headcount" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk Interface Type" max_length="100" name="disk_interface_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk Media Type" max_length="100" name="disk_media_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk Model" max_length="100" name="disk_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk Name" max_length="100" name="disk_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk Partition Count" max_length="100" name="disk_partition_count" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk SCSI Bus" max_length="40" name="disk_scsi_bus" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk SCSI Logical Unit" max_length="40" name="disk_scsi_logical_unit" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk SCSI Port" max_length="100" name="disk_scsi_port" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk SCSI Target ID" max_length="100" name="disk_scsi_target_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk Sectors Per Track" max_length="40" name="disk_sectors_per_track" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk Sector Count" max_length="100" name="disk_sector_count" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk Size Bytes" max_length="40" name="disk_size_bytes" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk Status" max_length="100" name="disk_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disk Track Count" max_length="40" name="disk_track_count" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="x_riscn_risc_netwo_customer_configuration">
+    <x_riscn_risc_netwo_customer_configuration action="INSERT_OR_UPDATE">
+        <api_key>APIKey</api_key>
+        <assessment_code>assessmentCode</assessment_code>
+        <host_api_url>https://api.riscnetworks.com:443/1_0</host_api_url>
+        <password>MEyi3jQvb+N7MaSa+EyjGA==</password>
+        <sys_class_name>x_riscn_risc_netwo_customer_configuration</sys_class_name>
+        <sys_created_by>mumtaz.ansari</sys_created_by>
+        <sys_created_on>2017-12-04 16:13:12</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>bd2bd38edbfe0f006cded5f0cf96194a</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>user@domain.com</sys_name>
+        <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+        <sys_update_name>x_riscn_risc_netwo_customer_configuration_bd2bd38edbfe0f006cded5f0cf96194a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-22 13:43:28</sys_updated_on>
+        <user_id>user@domain.com</user_id>
+    </x_riscn_risc_netwo_customer_configuration>
+</record_update>

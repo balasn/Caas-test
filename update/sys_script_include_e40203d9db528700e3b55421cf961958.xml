@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_riscn_risc_netwo.RISC_Add_New_Tag</api_name>
+        <client_callable>true</client_callable>
+        <description>Adding new Tags to Devices and Stacks</description>
+        <name>RISC_Add_New_Tag</name>
+        <script><![CDATA[var RISC_Add_New_Tag = Class.create();
+RISC_Add_New_Tag.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	
+	initiation:function()
+	{
+		var obj=new RISC_Add_New_Tag();		
+		var tagids=this.getParameter('sysparm_tagid');
+		var loggr = new RISCLogger();
+		obj.addNewTag(tagids,loggr);
+	},
+	addNewTag:function(tag_s,loggr)
+	{
+		
+		loggr.debug('Inside RISC_Add_New_Tag.addNewTag().');
+		try{
+			var getSysIdsFromTable=new GlideRecord('x_riscn_risc_netwo_risc_store_sysids');
+			getSysIdsFromTable.query();		
+			var sysids='';
+			var temp=getSysIdsFromTable.next();
+			sysids=getSysIdsFromTable.sys_ids;		
+			var devicetype=getSysIdsFromTable.device_type;			
+			var objectType=getSysIdsFromTable.object_type;
+			var tagid=tag_s;
+			var tagids=this.getTagIDs(tagid,loggr);		
+			var objectids='"object_ids":'+this.createObjectIDs(sysids,devicetype,objectType,loggr)+',';					
+			var tags='"tags":'+this.createTags(tagids,loggr);			
+			var object_type='"object_type":'+'"'+objectType+'",';
+			var object_id_type='"object_id_type":'+'"id",';	
+			var body='{'+object_type+object_id_type+objectids+tags+'}';	
+			if(body=='{"object_type":"undefined","object_id_type":"id","object_ids":undefined,"tags":undefined}')
+				{
+					gs.addInfoMessage('Previous Attempt Succeeded/Failed.Start Again From Selecting New Devices.');
+					return false;
+				}
+			this.addTags(body,loggr);				
+		}
+		catch(e)
+			{
+				loggr.error('Error Caught inside RISC_Add_New_Tag.addNewTag(). Error:- '+e);
+			}
+		
+		
+	},
+	
+	decryptingPassword:function(password,loggr)
+	{
+		loggr.debug('Inside RISC_Add_New_Tag.decryptingPassword().');
+		try{
+			return password.getDecryptedValue();
+		}
+		catch(e)
+			{
+				loggr.error('Error Caught inside RISC_Add_New_Tag.decryptingPassword(). Error:- '+e);
+			}
+			
+	},
+	addTags:function(body,loggr)
+	{
+		loggr.debug('Inside RISC_Add_New_Tag.addTags().');
+		try{			
+			var obj=new RISC_Populate_Queue();			
+			var gr=new GlideRecord('x_riscn_risc_netwo_customer_configuration');			
+			gr.addQuery('user_id','!=','');			
+			gr.query();			
+			gr.next();			
+			var username=gr.user_id;			
+			var assessmentCode=gr.assessment_code;			
+			var hostURL=gr.host_api_url;			
+			var password=gr.password;	
+			var apikey=gr.api_key;
+			password=this.decryptingPassword(password,loggr);			
+			var api = gs.getProperty('x_riscn_risc_netwo.api');	
+			var token=obj.getTokenKey(username,password,assessmentCode,apikey);
+			obj.setSessionVariables(token,assessmentCode);			
+			gs.setProperty("x_riscn_risc_netwo.token", token, "RISC Authentication Token");			
+			
+			var response=obj.makeApiCall(api+'/tags/addTags','post',body,'');				
+			if(response.contains("success"))
+				gs.addInfoMessage('Successfully Updated Tags !!!');
+			else 
+				gs.addInfoMessage('Failed To Add Tags ... !!! ');
+			var clearing_tables=new GlideRecord('x_riscn_risc_netwo_risc_intermediate_table_for_adding_new_tags');
+			clearing_tables.deleteMultiple();
+			clearing_tables=new GlideRecord('x_riscn_risc_netwo_risc_store_sysids');
+			clearing_tables.deleteMultiple();
+		}
+		catch(e)
+			{
+				loggr.error('Error Caught inside RISC_Add_New_Tag.addTags(). Error:- '+e);
+			}
+	},
+	
+	createObjectIDs:function(sysids,deviceType,objectType,loggr)
+	{
+		loggr.debug('Inside RISC_Add_New_Tag.createObjectIDs().');
+		try{
+			var arr=sysids.split(",");			
+			var objectids='[';
+			var gr;
+			var deviceid='';
+			var stackid='';
+			for(var i=0;i<arr.length;i++)
+			{
+				var temp=arr[i].toString().trim();				
+				arr[i]=temp;					
+				gr=new GlideRecord(this.getTable(deviceType,loggr));				
+				gr.addQuery('sys_id',arr[i]);				
+				gr.query();
+				
+				if(objectType=='Device'||objectType=='device')
+					{
+						
+						if(gr.next())
+						{
+							if(deviceType!='Inaccessible Windows Device'&&deviceType!='Linux and Unix Devices')
+								deviceid=gr.device_id;
+							else
+								{
+									deviceid=gr.deviceid;
+								}
+						}		
+						objectids=objectids+'"'+deviceid+'"';
+						if(i<arr.length-1)
+							objectids=objectids+',';						
+					}
+				else if(objectType=='stack')
+					{
+						if(gr.next())
+							{
+								stackid=gr.stackid;
+							}
+						objectids=objectids+'"'+stackid+'"';
+						if(i!=arr.length-1)
+							objectids=objectids+',';
+					}
+				
+			}
+			objectids=objectids+']';			
+			return objectids;
+		}
+		catch(e)
+			{
+				loggr.error('Error Caught inside RISC_Add_New_Tag.createObjectIDs(). Error:- '+e);
+			}
+		
+	},
+	
+	
+	getTagIDs:function(tag_id,loggr)
+	{	
+		loggr.debug('Inside RISC_Add_New_Tag.getTagIDs().');
+		try{
+			var gr=new GlideRecord('x_riscn_risc_netwo_risc_intermediate_table_for_adding_new_tags');			
+			var arr=tag_id.split(",");
+			var tagids='';		
+			for(var i=0;i<arr.length;i++)
+			{	
+				gr= new GlideRecord('x_riscn_risc_netwo_risc_intermediate_table_for_adding_new_tags');
+				gr.addQuery('sys_id',arr[i]);
+				gr.query();
+				if(gr.next())				
+					tagids=tagids+gr.tagid;				
+				if(i<arr.length-1)
+					tagids=tagids+',';				
+			}
+		
+			return tagids;
+		}
+		catch(e)
+			{
+				loggr.error('Error Caught inside RISC_Add_New_Tag.getTagIDs(). Error:- '+e);
+			}
+		
+	},
+	
+	
+	createTags:function(taglist,loggr)
+	{
+		loggr.debug('Inside RISC_Add_New_Tag.createTags().');
+		try{
+			var arr=taglist.split(",");		
+			var i,tagKey='',tagValue='',tag='[',tagdetails='';		
+			for(i=0;i<arr.length;i++)
+			{				
+				tagdetails=this.getTagValueandKey(arr[i],loggr);				
+				var tagdet=tagdetails.split(",");				
+				tagKey=tagdet[0];
+				tagValue=tagdet[1];
+				tag=tag+'{"tag_key":'+tagKey+',"tag_value":'+tagValue+'}';				
+				if(i<arr.length-1)
+					tag=tag+',';				
+			}
+			tag=tag+']';
+			return tag;
+		}
+		catch(e)
+			{
+				loggr.error('Error Caught inside RISC_Add_New_Tag.createTags(). Error:- '+e);
+			}
+		
+	},
+	
+	getTagValueandKey:function(tagid,loggr)
+	{	
+		loggr.debug('Inside RISC_Add_New_Tag.getTagValueandKey().');
+		try{
+			var gr=new GlideRecord('x_riscn_risc_netwo_risc_tags');		
+			gr.addQuery('tagid',tagid);
+			gr.query();
+			if(gr.next())
+			{			
+				var details= '"'+gr.tagkey+ '"'+','+'"'+gr.tagvalue+ '"';		
+				return details;
+			}
+		}
+		catch(e)
+			{
+				loggr.error('Error Caught inside RISC_Add_New_Tag.getTagValueandKey(). Error:- '+e);
+			}
+		
+	},
+	
+	addToTagsToIntermediateTable:function()
+	{
+		var log_obj = new RISCLogger();
+		log_obj.debug('Inside RISC_Add_New_Tag.addToTagsToIntermediateTable().');
+		try{
+			var sysids=this.getParameter('sysparm_sysids');
+			var device_type=this.getParameter('sysparm_devicetype');
+			var object_type=this.getParameter('sysparm_object_type');		
+			var gr=new GlideRecord('x_riscn_risc_netwo_risc_intermediate_table_for_adding_new_tags');
+			gr.setWorkflow(false);
+			gr.deleteMultiple();			
+			gr=new GlideRecord('x_riscn_risc_netwo_risc_intermediate_table_for_adding_new_tags');
+			var gr2=new GlideRecord('x_riscn_risc_netwo_risc_tags');
+			gr2.addQuery('tagid','!=','');
+			gr2.query();		
+			while(gr2.next())
+			{
+				gr.initialize();
+				gr.tagid=gr2.tagid;
+				gr.tagvalue=gr2.tagvalue;
+				gr.tagkey=gr2.tagkey;
+				gr.insert();
+			}
+			this.storesysids(sysids,device_type,object_type,log_obj);
+		}
+		catch(e)
+			{
+				log_obj.error('Error Caught inside RISC_Add_New_Tag.addToTagsToIntermediateTable(). Error:- '+e);
+			}
+		
+		
+	},
+	getTable:function(deviceType,loggr)
+	{
+		loggr.debug('Inside RISC_Add_New_Tag.getTable().');
+		try{
+			if(deviceType=='Basic Devices')
+				return 'x_riscn_risc_netwo_risc_basic_devices';
+			else if(deviceType=='Cisco CallManagers')
+				return 'x_riscn_risc_netwo_risc_cisco_callmanagers';
+			else if(deviceType=='Inaccessible Devices')
+				return 'x_riscn_risc_netwo_risc_inaccessible_devies';
+			else if(deviceType=='Inaccessible Network Infrastructure')
+				return 'x_riscn_risc_netwo_inaccessible_network_infrastructures';
+			else if(deviceType=='Inaccessible Windows Device')
+				return 'x_riscn_risc_netwo_risc_inaccessible_windows_device';
+			else if(deviceType=='IP Phones')
+				return 'x_riscn_risc_netwo_risc_ip_phone';
+			else if(deviceType=='Linux and Unix Devices')
+				return 'x_riscn_risc_netwo_risc_linux_unix_device';
+			else if(deviceType=='Network Infrastructure')
+				return 'x_riscn_risc_netwo_risc_network_infrastructure';
+			else if(deviceType=='Virtual Machines')
+				return 'x_riscn_risc_netwo_risc_virtual_machines';
+			else if(deviceType=='Windows Servers')
+				return 'x_riscn_risc_netwo_risc_windows_servers';
+			else if(deviceType=='Windows Workstations')
+				return 'x_riscn_risc_netwo_risc_windows_workstations';
+			else if(deviceType=='VMware Hosts')
+				return 'x_riscn_risc_netwo_risc_vmware_hosts';	
+			else if(deviceType=='Stack')
+				return 'x_riscn_risc_netwo_risc_stacks';
+			else
+				return 'Not Applicable';	
+		}
+		catch(e)
+			{
+				loggr.error('Error Caught inside RISC_Add_New_Tag.getTable(). Error:- '+e);
+			}
+			
+	},
+	storesysids:function(sysids,device_type,object_type,loggr)
+	{
+		loggr.debug('Inside RISC_Add_New_Tag.storesysids().');
+		try{
+			var gr=new GlideRecord('x_riscn_risc_netwo_risc_store_sysids');
+			gr.setWorkflow(false);
+			gr.deleteMultiple();
+			gr=new GlideRecord('x_riscn_risc_netwo_risc_store_sysids');			
+			gr.initialize();
+			gr.sys_ids=sysids;
+			gr.device_type=device_type;
+			gr.object_type=object_type;
+			gr.insert();
+		}
+		catch(e)
+			{
+				loggr.error('Error Caught inside RISC_Add_New_Tag.storesysids(). Error:- '+e);
+			}
+		
+	},
+	
+	type: 'RISC_Add_New_Tag'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Aakashjit</sys_created_by>
+        <sys_created_on>2017-11-07 09:57:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e40203d9db528700e3b55421cf961958</sys_id>
+        <sys_mod_count>320</sys_mod_count>
+        <sys_name>RISC_Add_New_Tag</sys_name>
+        <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+        <sys_update_name>sys_script_include_e40203d9db528700e3b55421cf961958</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-22 08:48:37</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="assessment_code" label="Assessment Code" language="en" table="x_riscn_risc_netwo_customer_configuration">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>assessment_code</element>
+            <help/>
+            <hint/>
+            <label>Assessment Code</label>
+            <language>en</language>
+            <name>x_riscn_risc_netwo_customer_configuration</name>
+            <plural>Assessment Codes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-12-04 16:08:35</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>796ad74edbfe0f006cded5f0cf961980</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Assessment Code</sys_name>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_documentation_x_riscn_risc_netwo_customer_configuration_assessment_code_en</sys_update_name>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-12-04 16:08:35</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

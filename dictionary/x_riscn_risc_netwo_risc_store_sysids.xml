@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC Store Sysids" max_length="40" name="x_riscn_risc_netwo_risc_store_sysids" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Device Type" max_length="100000" name="device_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Object Type" max_length="100000" name="object_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Record ID" max_length="40" name="record_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys IDs" max_length="100000000" name="sys_ids" type="string"/>
+    </element>
+</database>

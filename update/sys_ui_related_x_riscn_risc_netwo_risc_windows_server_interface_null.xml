@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_related sys_domain="global" table="x_riscn_risc_netwo_risc_windows_server_interface" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Windows Server Interface - Default view" name="x_riscn_risc_netwo_risc_windows_server_interface" related_list="NULL" sys_domain="global" view="Default view">c24fa589dbfe4b00e3b55421cf96199f</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-12-01 05:46:38</sys_created_on>
+            <sys_id>024fa589dbfe4b00e3b55421cf9619a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-12-01 05:46:38</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>RISC Windows Server Interface - Default view</calculated_name>
+            <filter/>
+            <name>x_riscn_risc_netwo_risc_windows_server_interface</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-12-01 05:46:38</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c24fa589dbfe4b00e3b55421cf96199f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>RISC Windows Server Interface - Default view</sys_name>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_related_x_riscn_risc_netwo_risc_windows_server_interface_null</sys_update_name>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-12-01 05:46:38</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

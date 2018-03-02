@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_related sys_domain="global" table="x_riscn_risc_netwo_inaccessible_network_infrastructures" version="2" view="risc_network">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Inaccessible Network Infrastructures - RISC Network" name="x_riscn_risc_netwo_inaccessible_network_infrastructures" related_list="NULL" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">0669832bdb568b006cded5f0cf961943</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>REL:73a22965db4e03006cded5f0cf961936</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-14 10:13:48</sys_created_on>
+            <sys_id>ca69832bdb568b006cded5f0cf961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-14 10:13:48</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Inaccessible Network Infrastructures - RISC Network" name="x_riscn_risc_netwo_inaccessible_network_infrastructures" related_list="NULL" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">0669832bdb568b006cded5f0cf961943</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>REL:096f38dadbf1c7406cded5f0cf96191d</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-14 10:13:48</sys_created_on>
+            <sys_id>ce69832bdb568b006cded5f0cf961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-14 10:13:48</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Inaccessible Network Infrastructures - RISC Network" name="x_riscn_risc_netwo_inaccessible_network_infrastructures" related_list="NULL" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">0669832bdb568b006cded5f0cf961943</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>REL:391a016bdbc2cb00e3b55421cf96195b</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-14 10:13:48</sys_created_on>
+            <sys_id>c269832bdb568b006cded5f0cf961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-14 10:13:48</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Inaccessible Network Infrastructures - RISC Network" name="x_riscn_risc_netwo_inaccessible_network_infrastructures" related_list="NULL" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">0669832bdb568b006cded5f0cf961943</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>REL:adcb56f3db0e0f00e3b55421cf96195e</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-14 10:13:48</sys_created_on>
+            <sys_id>c669832bdb568b006cded5f0cf961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-14 10:13:48</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Inaccessible Network Infrastructures - RISC Network" name="x_riscn_risc_netwo_inaccessible_network_infrastructures" related_list="NULL" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">0669832bdb568b006cded5f0cf961943</list_id>
+            <order_by/>
+            <position>4</position>
+            <related_list>REL:f051013fdbcecb00e3b55421cf961999</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-14 10:13:48</sys_created_on>
+            <sys_id>ca69832bdb568b006cded5f0cf961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-14 10:13:48</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>RISC Inaccessible Network Infrastructures - RISC Network</calculated_name>
+            <filter/>
+            <name>x_riscn_risc_netwo_inaccessible_network_infrastructures</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-14 10:13:48</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0669832bdb568b006cded5f0cf961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>RISC Inaccessible Network Infrastructures - RISC Network</sys_name>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_related_x_riscn_risc_netwo_inaccessible_network_infrastructures_risc_network</sys_update_name>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-14 10:13:48</sys_updated_on>
+            <sys_user/>
+            <view display_value="RISC Network" name="risc_network">3fb85295dbde4700e3b55421cf9619a9</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

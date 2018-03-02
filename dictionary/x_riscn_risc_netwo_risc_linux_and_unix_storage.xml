@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC Storage" max_length="40" name="x_riscn_risc_netwo_risc_linux_and_unix_storage" type="collection">
+        <element label="Device Id" max_length="40" name="device_id" type="string"/>
+        <element label="Device Type" max_length="40" name="device_type" type="string"/>
+        <element label="Storage Description" max_length="100" name="storage_description" type="string"/>
+        <element label="Storage Size(bytes)" max_length="40" name="storage_size_bytes" type="string"/>
+        <element label="Storage Used(bytes)" max_length="40" name="storage_used_bypes" type="string"/>
+    </element>
+</database>

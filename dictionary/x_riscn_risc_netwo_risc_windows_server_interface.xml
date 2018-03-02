@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC Windows Server Interface" max_length="40" name="x_riscn_risc_netwo_risc_windows_server_interface" type="collection">
+        <element label="Connected" max_length="40" name="connected" type="string"/>
+        <element label="Device Id" max_length="40" name="device_id" type="string"/>
+        <element label="Device Type" max_length="40" name="device_type" type="string"/>
+        <element label="Interface Default Tos" max_length="40" name="interface_default_tos" type="string"/>
+        <element label="Interface Description" max_length="100" name="interface_description" type="string"/>
+        <element label="Interface DHCP Enabled" max_length="40" name="interface_dhcp_enabled" type="string"/>
+        <element label="Interface DHCP Lease Expires" max_length="40" name="interface_dhcp_lease_expires" type="string"/>
+        <element label="Interface DHCP Lease Obtained" max_length="40" name="interface_dhcp_lease_obtained" type="string"/>
+        <element label="Interface DHCP Server" max_length="40" name="interface_dhcp_server" type="string"/>
+        <element label="Interface DNS Domain" max_length="40" name="interface_dns_domain" type="string"/>
+        <element label="Interface DNS Hostname" max_length="100" name="interface_dns_hostname" type="string"/>
+        <element label="Interface Index" max_length="40" name="interface_index" type="string"/>
+        <element label="Interface Mac" max_length="100" name="interface_mac" type="string"/>
+        <element label="Interface Manufacturer" max_length="100" name="interface_manufacturer" type="string"/>
+        <element label="Interface Name" max_length="100" name="interface_name" type="string"/>
+        <element label="Interface Network Connection Id" max_length="40" name="interface_network_connection_id" type="string"/>
+        <element label="Interface Type" max_length="40" name="interface_type" type="string"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="IPs" max_length="100000000" name="ips" type="string"/>
+        <element label="Mac" max_length="40" name="mac" type="string"/>
+        <element label="Network" max_length="40" name="network" type="string"/>
+    </element>
+</database>

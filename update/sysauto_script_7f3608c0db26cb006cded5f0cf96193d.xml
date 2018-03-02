@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>RISC Network Sync Data</name>
+        <run_as/>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-02 00:00:00</run_period>
+        <run_start/>
+        <run_time>1970-01-01 19:55:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var loggr = new RISCLogger();
+try{
+	loggr.info("[Scheduled Job - RISC Network Sync Data]");
+	var grQueue = new GlideRecord('x_riscn_risc_netwo_risc_queue');
+	grQueue.setWorkflow(false);
+	grQueue.deleteMultiple();
+	
+	var userID = '';
+	var decryptedPassword = '';
+	var assessCode = '';
+	var hostAPI = '';
+	var apikey = '';
+	
+	var gr =  new GlideRecord('x_riscn_risc_netwo_customer_configuration');
+	gr.query();
+	if(gr.next()){
+		decryptedPassword = gr.password.getDecryptedValue();
+		userID = gr.user_id;
+		assessCode = gr.assessment_code;
+		hostAPI = gr.host_api_url;
+		apikey = gr.api_key;
+	}
+	
+	var obj = new RISC_Populate_Queue();
+	obj.setApi(hostAPI);
+	var token = obj.getTokenKey(userID, decryptedPassword, assessCode, apikey);
+	if(token !="none"){
+
+		loggr.info("[RISC ] : Logged in successfully.");
+		
+		obj.setSessionVariables(token, assessCode);
+		obj.insertDevicesApiIntoQueue();
+		
+	} else {
+		loggr.warn("Invalid username/password/apikey/assessmentcode combination.  Please try again..");
+	}
+	
+}catch(e){
+	loggr.error('Error Caught During SYNC Data. '+e);
+}
+
+
+
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>mumtaz.ansari</sys_created_by>
+        <sys_created_on>2017-11-15 09:20:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7f3608c0db26cb006cded5f0cf96193d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>RISC Network Sync Data</sys_name>
+        <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+        <sys_update_name>sysauto_script_7f3608c0db26cb006cded5f0cf96193d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-19 10:53:53</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

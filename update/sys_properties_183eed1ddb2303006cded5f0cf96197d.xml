@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>RISC Logger Level select&#13;
+&#13;
+0 for error logs&#13;
+1 for warning and errorlogs&#13;
+2 for info, warn and error logs&#13;
+3 for debug, info, warn and error logs</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_riscn_risc_netwo.logger.level</name>
+        <read_roles/>
+        <suffix>logger.level</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>girishgyani</sys_created_by>
+        <sys_created_on>2018-01-08 07:09:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>183eed1ddb2303006cded5f0cf96197d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>x_riscn_risc_netwo.logger.level</sys_name>
+        <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+        <sys_update_name>sys_properties_183eed1ddb2303006cded5f0cf96197d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-18 11:50:14</sys_updated_on>
+        <type>integer</type>
+        <value>1</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=183eed1ddb2303006cded5f0cf96197d"/>
+</record_update>

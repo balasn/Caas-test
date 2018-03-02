@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_related sys_domain="global" table="x_riscn_risc_netwo_risc_basic_devices" version="2" view="risc_default">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Basic Devices - Risc_default" name="x_riscn_risc_netwo_risc_basic_devices" related_list="NULL" sys_domain="global" view="de0e5406dbd247006cded5f0cf961977">9f0e9a37db6e8700e3b55421cf961901</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>REL:d76329a5db4e03006cded5f0cf961994</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-27 11:58:34</sys_created_on>
+            <sys_id>db0e9a37db6e8700e3b55421cf961902</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-27 11:58:34</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Basic Devices - Risc_default" name="x_riscn_risc_netwo_risc_basic_devices" related_list="NULL" sys_domain="global" view="de0e5406dbd247006cded5f0cf961977">9f0e9a37db6e8700e3b55421cf961901</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>REL:b62325a5db4e03006cded5f0cf961953</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-27 11:58:34</sys_created_on>
+            <sys_id>170e9a37db6e8700e3b55421cf961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-27 11:58:34</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Basic Devices - Risc_default" name="x_riscn_risc_netwo_risc_basic_devices" related_list="NULL" sys_domain="global" view="de0e5406dbd247006cded5f0cf961977">9f0e9a37db6e8700e3b55421cf961901</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>REL:e370b2fddbaa43006cded5f0cf96194e</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-27 11:58:34</sys_created_on>
+            <sys_id>1b0e9a37db6e8700e3b55421cf961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-27 11:58:34</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Basic Devices - Risc_default" name="x_riscn_risc_netwo_risc_basic_devices" related_list="NULL" sys_domain="global" view="de0e5406dbd247006cded5f0cf961977">9f0e9a37db6e8700e3b55421cf961901</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>REL:afbab97fdb4a0f00e3b55421cf9619ba</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-27 11:58:34</sys_created_on>
+            <sys_id>1f0e9a37db6e8700e3b55421cf961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-27 11:58:34</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Basic Devices - Risc_default" name="x_riscn_risc_netwo_risc_basic_devices" related_list="NULL" sys_domain="global" view="de0e5406dbd247006cded5f0cf961977">9f0e9a37db6e8700e3b55421cf961901</list_id>
+            <order_by/>
+            <position>4</position>
+            <related_list>REL:c9b0817bdb8ecb00e3b55421cf961912</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-27 11:58:34</sys_created_on>
+            <sys_id>130e9a37db6e8700e3b55421cf961904</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-27 11:58:34</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>RISC Basic Devices - Risc_default</calculated_name>
+            <filter/>
+            <name>x_riscn_risc_netwo_risc_basic_devices</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-27 11:58:34</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9f0e9a37db6e8700e3b55421cf961901</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>RISC Basic Devices - Risc_default</sys_name>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_related_x_riscn_risc_netwo_risc_basic_devices_risc_default</sys_update_name>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-27 11:58:34</sys_updated_on>
+            <sys_user/>
+            <view display_value="Risc_default" name="risc_default">de0e5406dbd247006cded5f0cf961977</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

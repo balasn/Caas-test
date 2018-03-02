@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="560aa8bedbf28f006cded5f0cf961966" sys_domain="global" table="x_riscn_risc_netwo_risc_device_and_tags" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>device_id</element>
+            <position>0</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-06 11:16:23</sys_created_on>
+            <sys_id>9dba6832db368f006cded5f0cf961936</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_device_and_tags" sys_domain="global" view="Default view">560aa8bedbf28f006cded5f0cf961966</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-06 11:16:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>device_type</element>
+            <position>1</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-06 11:16:23</sys_created_on>
+            <sys_id>15ba6832db368f006cded5f0cf961937</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_device_and_tags" sys_domain="global" view="Default view">560aa8bedbf28f006cded5f0cf961966</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-06 11:16:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-06 11:16:23</sys_created_on>
+            <sys_id>95ba6832db368f006cded5f0cf961937</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_device_and_tags" sys_domain="global" view="Default view">560aa8bedbf28f006cded5f0cf961966</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-06 11:16:23</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>tag_id</element>
+            <position>3</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-06 11:16:23</sys_created_on>
+            <sys_id>19ba6832db368f006cded5f0cf961937</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_device_and_tags" sys_domain="global" view="Default view">560aa8bedbf28f006cded5f0cf961966</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-06 11:16:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_riscn_risc_netwo_risc_device_and_tags</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-06 11:13:27</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>560aa8bedbf28f006cded5f0cf961966</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>x_riscn_risc_netwo_risc_device_and_tags</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_section_560aa8bedbf28f006cded5f0cf961966</sys_update_name>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2018-01-08 09:26:28</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

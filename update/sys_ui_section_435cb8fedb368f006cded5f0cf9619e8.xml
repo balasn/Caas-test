@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="435cb8fedb368f006cded5f0cf9619e8" sys_domain="global" table="x_riscn_risc_netwo_risc_linux_and_unix_storage" version="3" view="risc_network">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>device_id</element>
+            <position>0</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-12-06 12:33:31</sys_created_on>
+            <sys_id>0b5cfc32db768f006cded5f0cf961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_and_unix_storage" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">435cb8fedb368f006cded5f0cf9619e8</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-12-06 12:33:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>device_type</element>
+            <position>1</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-12-06 12:33:31</sys_created_on>
+            <sys_id>035cfc32db768f006cded5f0cf96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_and_unix_storage" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">435cb8fedb368f006cded5f0cf9619e8</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-12-06 12:33:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>storage_description</element>
+            <position>2</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-12-06 12:33:31</sys_created_on>
+            <sys_id>835cfc32db768f006cded5f0cf96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_and_unix_storage" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">435cb8fedb368f006cded5f0cf9619e8</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-12-06 12:33:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-12-06 12:33:31</sys_created_on>
+            <sys_id>075cfc32db768f006cded5f0cf96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_and_unix_storage" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">435cb8fedb368f006cded5f0cf9619e8</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-12-06 12:33:31</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>storage_size_bytes</element>
+            <position>4</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-12-06 12:33:31</sys_created_on>
+            <sys_id>875cfc32db768f006cded5f0cf96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_and_unix_storage" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">435cb8fedb368f006cded5f0cf9619e8</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-12-06 12:33:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>storage_used_bypes</element>
+            <position>5</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-12-06 12:33:31</sys_created_on>
+            <sys_id>0b5cfc32db768f006cded5f0cf96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_and_unix_storage" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">435cb8fedb368f006cded5f0cf9619e8</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-12-06 12:33:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_riscn_risc_netwo_risc_linux_and_unix_storage</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-12-06 12:33:31</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>435cb8fedb368f006cded5f0cf9619e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_riscn_risc_netwo_risc_linux_and_unix_storage</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_section_435cb8fedb368f006cded5f0cf9619e8</sys_update_name>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-12-06 12:33:31</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="RISC Network" name="risc_network">3fb85295dbde4700e3b55421cf9619a9</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="42b3829fdb1a4f00e3b55421cf9619f5" sys_domain="global" table="x_riscn_risc_netwo_risc_network_infrastructure" version="3" view="risc_network">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>device_id</element>
+            <position>0</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>b4165df9db538b40e3b55421cf96191e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>family</element>
+            <position>1</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>38165df9db538b40e3b55421cf96191e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>feature_set</element>
+            <position>2</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>b8165df9db538b40e3b55421cf96191e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>firmware_version</element>
+            <position>3</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>3c165df9db538b40e3b55421cf96191e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hostname</element>
+            <position>4</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>bc165df9db538b40e3b55421cf96191e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>location</element>
+            <position>5</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>30165df9db538b40e3b55421cf96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>manufacturer</element>
+            <position>6</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>b0165df9db538b40e3b55421cf96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ip_address</element>
+            <position>7</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>34165df9db538b40e3b55421cf96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mac_address</element>
+            <position>8</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>b4165df9db538b40e3b55421cf96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset</element>
+            <position>9</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>3416ddf9db538b40e3b55421cf9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>model_id</element>
+            <position>10</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>b416ddf9db538b40e3b55421cf9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>11</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>3816ddf9db538b40e3b55421cf9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>device_type</element>
+            <position>12</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>b816ddf9db538b40e3b55421cf9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>model_number</element>
+            <position>13</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>3c16ddf9db538b40e3b55421cf9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>model_description</element>
+            <position>14</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>bc16ddf9db538b40e3b55421cf9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ram</element>
+            <position>15</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>3016ddf9db538b40e3b55421cf9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>serial_number</element>
+            <position>16</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>b016ddf9db538b40e3b55421cf9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>software_version</element>
+            <position>17</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>3416ddf9db538b40e3b55421cf9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>18</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>b416ddf9db538b40e3b55421cf9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor</element>
+            <position>19</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>3816ddf9db538b40e3b55421cf9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>licensed</element>
+            <position>20</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>b816ddf9db538b40e3b55421cf9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>21</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>3c16ddf9db538b40e3b55421cf9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ui_ng_relation_formatter.xml</element>
+            <position>22</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:23:21</sys_created_on>
+            <sys_id>bc16ddf9db538b40e3b55421cf9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="CI Relations">b62309137f32310009fedf92bdfa912b</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">42b3829fdb1a4f00e3b55421cf9619f5</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:23:21</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_riscn_risc_netwo_risc_network_infrastructure</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-13 10:30:51</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>42b3829fdb1a4f00e3b55421cf9619f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_riscn_risc_netwo_risc_network_infrastructure</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_section_42b3829fdb1a4f00e3b55421cf9619f5</sys_update_name>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-13 10:30:51</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="RISC Network" name="risc_network">3fb85295dbde4700e3b55421cf9619a9</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC IPs" max_length="40" name="x_riscn_risc_netwo_risc_ips" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Device Type" max_length="40" name="devicetype" type="string"/>
+        <element display="true" label="Device Id" max_length="40" name="device_id" type="string"/>
+        <element label="IP" max_length="40" name="ip" type="string"/>
+    </element>
+</database>

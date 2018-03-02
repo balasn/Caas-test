@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC Network Entity" max_length="40" name="x_riscn_risc_netwo_risc_network_entity" type="collection">
+        <element display="true" label="Description" max_length="150" name="description" type="string"/>
+        <element label="Device Id" max_length="100" name="device_id" type="string"/>
+        <element label="Device Type" max_length="100" name="device_type" type="string"/>
+        <element label="Entity Class" max_length="100" name="entity_class" type="string"/>
+        <element label="Entity Name" max_length="40" name="entity_name" type="string"/>
+        <element label="Firmware Version" max_length="50" name="firmware_version" type="string"/>
+        <element label="Hardware Version" max_length="50" name="hardware_version" type="string"/>
+        <element label="Model" max_length="100" name="model" type="string"/>
+        <element label="Serial" max_length="100" name="serial" type="string"/>
+        <element label="Software Version" max_length="50" name="software_version" type="string"/>
+    </element>
+</database>

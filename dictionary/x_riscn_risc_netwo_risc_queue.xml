@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC Queue" max_length="40" name="x_riscn_risc_netwo_risc_queue" type="collection">
+        <element label="Body" max_length="1048576" name="body" type="string"/>
+        <element label="Device Type" max_length="40" name="device_type" type="string"/>
+        <element label="Method" max_length="40" name="method" type="string"/>
+        <element label="Payload" max_length="1048576" name="payload" type="string"/>
+        <element label="State" max_length="40" name="state" type="string"/>
+        <element label="Type" max_length="40" name="type" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="wakeonlansupported" label="Wake On LAN Supported" language="en" table="x_riscn_risc_netwo_risc_vmware_host_interfaces">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>wakeonlansupported</element>
+            <help/>
+            <hint/>
+            <label>Wake On LAN Supported</label>
+            <language>en</language>
+            <name>x_riscn_risc_netwo_risc_vmware_host_interfaces</name>
+            <plural>Wake On LAN Supported</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 10:55:16</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>fac27676dbe607006cded5f0cf9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Wake On LAN Supported</sys_name>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_documentation_x_riscn_risc_netwo_risc_vmware_host_interfaces_wakeonlansupported_en</sys_update_name>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 10:55:16</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

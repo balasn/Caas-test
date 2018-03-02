@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>assessment_code</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>mumtaz.ansari</sys_created_by>
+        <sys_created_on>2017-09-29 10:48:43</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>4738d63cdba54f00e3b55421cf9619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>assessment_code</sys_name>
+        <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+        <sys_update_name>sys_ui_policy_action_4738d63cdba54f00e3b55421cf9619c5</sys_update_name>
+        <sys_updated_by>mumtaz.ansari</sys_updated_by>
+        <sys_updated_on>2017-09-29 10:48:43</sys_updated_on>
+        <table>x_riscn_risc_netwo_customer_configuration</table>
+        <ui_policy display_value="Make RISC Customer Configuratin fields Mandatory">f9e7163cdba54f00e3b55421cf961981</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

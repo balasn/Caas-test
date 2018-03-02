@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="787eaa72dbe607006cded5f0cf9619e1" sys_domain="global" table="x_riscn_risc_netwo_risc_vmware_host_interfaces" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>device_id</element>
+            <position>0</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 10:55:18</sys_created_on>
+            <sys_id>a7c2b676dbe607006cded5f0cf96192f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_vmware_host_interfaces" sys_domain="global" view="Default view">787eaa72dbe607006cded5f0cf9619e1</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 10:55:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>autonegotiatesupported</element>
+            <position>1</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 10:55:18</sys_created_on>
+            <sys_id>2fc2b676dbe607006cded5f0cf96192f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_vmware_host_interfaces" sys_domain="global" view="Default view">787eaa72dbe607006cded5f0cf9619e1</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 10:55:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>driver</element>
+            <position>2</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 10:55:18</sys_created_on>
+            <sys_id>afc2b676dbe607006cded5f0cf96192f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_vmware_host_interfaces" sys_domain="global" view="Default view">787eaa72dbe607006cded5f0cf9619e1</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 10:55:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mac</element>
+            <position>3</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 10:55:18</sys_created_on>
+            <sys_id>23c2b676dbe607006cded5f0cf961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_vmware_host_interfaces" sys_domain="global" view="Default view">787eaa72dbe607006cded5f0cf9619e1</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 10:55:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pnickey</element>
+            <position>4</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 10:55:18</sys_created_on>
+            <sys_id>a3c2b676dbe607006cded5f0cf961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_vmware_host_interfaces" sys_domain="global" view="Default view">787eaa72dbe607006cded5f0cf9619e1</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 10:55:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>speedmb</element>
+            <position>5</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 10:55:18</sys_created_on>
+            <sys_id>27c2b676dbe607006cded5f0cf961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_vmware_host_interfaces" sys_domain="global" view="Default view">787eaa72dbe607006cded5f0cf9619e1</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 10:55:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>wakeonlansupported</element>
+            <position>6</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 10:55:18</sys_created_on>
+            <sys_id>a7c2b676dbe607006cded5f0cf961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_vmware_host_interfaces" sys_domain="global" view="Default view">787eaa72dbe607006cded5f0cf9619e1</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 10:55:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>7</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 10:55:18</sys_created_on>
+            <sys_id>2bc2b676dbe607006cded5f0cf961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_vmware_host_interfaces" sys_domain="global" view="Default view">787eaa72dbe607006cded5f0cf9619e1</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 10:55:18</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>deivce_type</element>
+            <position>8</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 10:55:18</sys_created_on>
+            <sys_id>abc2b676dbe607006cded5f0cf961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_vmware_host_interfaces" sys_domain="global" view="Default view">787eaa72dbe607006cded5f0cf9619e1</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 10:55:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>device</element>
+            <position>9</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 10:55:18</sys_created_on>
+            <sys_id>2fc2b676dbe607006cded5f0cf961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_vmware_host_interfaces" sys_domain="global" view="Default view">787eaa72dbe607006cded5f0cf9619e1</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 10:55:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>duplex</element>
+            <position>10</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 10:55:18</sys_created_on>
+            <sys_id>afc2b676dbe607006cded5f0cf961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_vmware_host_interfaces" sys_domain="global" view="Default view">787eaa72dbe607006cded5f0cf9619e1</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 10:55:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pci</element>
+            <position>11</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 10:55:18</sys_created_on>
+            <sys_id>23c2b676dbe607006cded5f0cf961931</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_vmware_host_interfaces" sys_domain="global" view="Default view">787eaa72dbe607006cded5f0cf9619e1</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 10:55:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>resourcepoolschedulerallowed</element>
+            <position>12</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 10:55:18</sys_created_on>
+            <sys_id>a3c2b676dbe607006cded5f0cf961931</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_vmware_host_interfaces" sys_domain="global" view="Default view">787eaa72dbe607006cded5f0cf9619e1</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 10:55:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vmdirectpathgen2supported</element>
+            <position>13</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 10:55:18</sys_created_on>
+            <sys_id>27c2b676dbe607006cded5f0cf961931</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_vmware_host_interfaces" sys_domain="global" view="Default view">787eaa72dbe607006cded5f0cf9619e1</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 10:55:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_riscn_risc_netwo_risc_vmware_host_interfaces</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 10:36:17</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>787eaa72dbe607006cded5f0cf9619e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_riscn_risc_netwo_risc_vmware_host_interfaces</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_section_787eaa72dbe607006cded5f0cf9619e1</sys_update_name>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 10:36:17</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC Bridge Stack Device Table" max_length="40" name="x_riscn_risc_netwo_risc_bridge_stack_device_table" type="collection">
+        <element label="Device Id" max_length="40" name="deviceid" type="string"/>
+        <element label="Stack Id" max_length="40" name="stackid" type="string"/>
+    </element>
+</database>

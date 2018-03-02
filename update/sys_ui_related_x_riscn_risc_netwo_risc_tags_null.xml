@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_related sys_domain="global" table="x_riscn_risc_netwo_risc_tags" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Tags - Default view" name="x_riscn_risc_netwo_risc_tags" related_list="NULL" sys_domain="global" view="Default view">6f8f6c0edb230300cbb9d100cf961917</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>REL:f6bf56e9db4643006cded5f0cf9619f0</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-10 10:29:13</sys_created_on>
+            <sys_id>eb8f6c0edb230300cbb9d100cf961918</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-10 10:29:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Tags - Default view" name="x_riscn_risc_netwo_risc_tags" related_list="NULL" sys_domain="global" view="Default view">6f8f6c0edb230300cbb9d100cf961917</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>REL:43dea00edb230300cbb9d100cf96194c</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-10 10:29:13</sys_created_on>
+            <sys_id>278f6c0edb230300cbb9d100cf961919</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-10 10:29:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Tags - Default view" name="x_riscn_risc_netwo_risc_tags" related_list="NULL" sys_domain="global" view="Default view">6f8f6c0edb230300cbb9d100cf961917</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>REL:cfff1e2ddb4643006cded5f0cf9619cb</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-10 10:29:13</sys_created_on>
+            <sys_id>2b8f6c0edb230300cbb9d100cf961919</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-10 10:29:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Tags - Default view" name="x_riscn_risc_netwo_risc_tags" related_list="NULL" sys_domain="global" view="Default view">6f8f6c0edb230300cbb9d100cf961917</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>REL:d030ee2ddb4643006cded5f0cf961904</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-10 10:29:13</sys_created_on>
+            <sys_id>2f8f6c0edb230300cbb9d100cf961919</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-10 10:29:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Tags - Default view" name="x_riscn_risc_netwo_risc_tags" related_list="NULL" sys_domain="global" view="Default view">6f8f6c0edb230300cbb9d100cf961917</list_id>
+            <order_by/>
+            <position>4</position>
+            <related_list>REL:6650226ddb4643006cded5f0cf9619aa</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-10 10:29:13</sys_created_on>
+            <sys_id>238f6c0edb230300cbb9d100cf96191a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-10 10:29:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Tags - Default view" name="x_riscn_risc_netwo_risc_tags" related_list="NULL" sys_domain="global" view="Default view">6f8f6c0edb230300cbb9d100cf961917</list_id>
+            <order_by/>
+            <position>5</position>
+            <related_list>REL:1080626ddb4643006cded5f0cf9619e2</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-10 10:29:13</sys_created_on>
+            <sys_id>278f6c0edb230300cbb9d100cf96191a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-10 10:29:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Tags - Default view" name="x_riscn_risc_netwo_risc_tags" related_list="NULL" sys_domain="global" view="Default view">6f8f6c0edb230300cbb9d100cf961917</list_id>
+            <order_by/>
+            <position>6</position>
+            <related_list>REL:1db0266ddb4643006cded5f0cf961912</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-10 10:29:13</sys_created_on>
+            <sys_id>2b8f6c0edb230300cbb9d100cf96191a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-10 10:29:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Tags - Default view" name="x_riscn_risc_netwo_risc_tags" related_list="NULL" sys_domain="global" view="Default view">6f8f6c0edb230300cbb9d100cf961917</list_id>
+            <order_by/>
+            <position>7</position>
+            <related_list>REL:28d0666ddb4643006cded5f0cf961931</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-10 10:29:13</sys_created_on>
+            <sys_id>2f8f6c0edb230300cbb9d100cf96191a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-10 10:29:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Tags - Default view" name="x_riscn_risc_netwo_risc_tags" related_list="NULL" sys_domain="global" view="Default view">6f8f6c0edb230300cbb9d100cf961917</list_id>
+            <order_by/>
+            <position>8</position>
+            <related_list>REL:db11e66ddb4643006cded5f0cf9619d0</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-10 10:29:13</sys_created_on>
+            <sys_id>238f6c0edb230300cbb9d100cf96191b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-10 10:29:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Tags - Default view" name="x_riscn_risc_netwo_risc_tags" related_list="NULL" sys_domain="global" view="Default view">6f8f6c0edb230300cbb9d100cf961917</list_id>
+            <order_by/>
+            <position>9</position>
+            <related_list>REL:ac3bec35db96c700e3b55421cf9619a5</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-10 10:29:13</sys_created_on>
+            <sys_id>278f6c0edb230300cbb9d100cf96191b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-10 10:29:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Tags - Default view" name="x_riscn_risc_netwo_risc_tags" related_list="NULL" sys_domain="global" view="Default view">6f8f6c0edb230300cbb9d100cf961917</list_id>
+            <order_by/>
+            <position>10</position>
+            <related_list>REL:12416a6ddb4643006cded5f0cf961988</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-10 10:29:13</sys_created_on>
+            <sys_id>2b8f6c0edb230300cbb9d100cf96191b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-10 10:29:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="RISC Tags - Default view" name="x_riscn_risc_netwo_risc_tags" related_list="NULL" sys_domain="global" view="Default view">6f8f6c0edb230300cbb9d100cf961917</list_id>
+            <order_by/>
+            <position>11</position>
+            <related_list>REL:0661aa6ddb4643006cded5f0cf961966</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-10 10:29:13</sys_created_on>
+            <sys_id>2f8f6c0edb230300cbb9d100cf96191b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-10 10:29:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>RISC Tags - Default view</calculated_name>
+            <filter/>
+            <name>x_riscn_risc_netwo_risc_tags</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-10 10:29:13</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6f8f6c0edb230300cbb9d100cf961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>RISC Tags - Default view</sys_name>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_related_x_riscn_risc_netwo_risc_tags_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-10 10:29:13</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

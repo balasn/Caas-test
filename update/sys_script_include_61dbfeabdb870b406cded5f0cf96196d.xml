@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_riscn_risc_netwo.RISCRelationship</api_name>
+        <client_callable>false</client_callable>
+        <description>This script finds, makes and attaches CIs ie. making relationships. </description>
+        <name>RISCRelationship</name>
+        <script><![CDATA[var RISCRelationship = Class.create();
+RISCRelationship.prototype = {
+	initialize: function() {
+		this.loggr = new RISCLogger();
+	},
+	
+	getPayload: function(id, type){
+		
+		this.loggr.debug('Inside RISCRelationship.getPayload().');
+		try{
+			var payload = '';
+			var gr = new GlideRecord('x_riscn_risc_netwo_risc_devices_relationship_data');
+			gr.addEncodedQuery('device_type='+type+'^device_id='+id);
+			gr.query();
+			if(gr.next()){
+				payload = gr.payload;
+				gr.deleteRecord();	
+			}				
+			return payload;
+		}catch(e){
+			this.loggr.error('Error caught inside RISCRelationship.getPayload(). Error:- '+e);
+		}
+	},
+	
+	makeRelation: function(sys, id, type){
+		
+		this.loggr.debug('Inside RISCRelationship.makeRelation().');
+		try{
+			
+			var CurrentSysId = sys+'';
+			var devId = id+'';
+			var devType = type;
+			
+			var gAsset = '';
+			
+			var payload = this.getPayload(devId, devType);
+			
+			var dev = this.parseJson(payload);
+			
+			var sno = dev.serialNo;
+			var mcs = dev.macs.toString();
+			var iss = dev.ips.toString();
+			
+			var rel = new GlideRecord('cmdb_rel_ci');
+			var query = 'parent='+CurrentSysId+'^ORchild='+CurrentSysId+'^type='+gs.getProperty('x_riscn_risc_netwo.relation_sysid');
+			rel.addEncodedQuery(query);
+			rel.deleteMultiple();
+			
+			query = '';
+			
+			if(mcs && iss)	query = query + 'mac_address='+mcs.replaceAll(',','^ORmac_address=')+'^'+'ip_address='+iss.replaceAll(',','^ORip_address=')+'^'+'nameNOT LIKE'+devId;
+			if(query)	    query = query + '^NQ';
+			if(sno)	        query = query + 'serial_number='+sno+'^'+'nameNOT LIKE'+devId;
+			
+			if(query && CurrentSysId){
+				gr = new GlideRecord('cmdb_ci');
+				gr.addEncodedQuery(query);
+				gr.query();
+				while(gr.next()){
+					if(gr.sys_id != CurrentSysId){
+						var CMDBsid = '';
+						var asst = '';
+						if(gr.asset){
+							asst = gr.asset;
+							CMDBsid = gr.sys_id;
+							gAsset = asst;
+						}else{
+							var vr = new GlideRecord(gr.sys_class_name);
+							vr.addEncodedQuery('sys_id='+gr.sys_id);
+							vr.query();
+							if(vr.next()){
+								if( vr.cmdb_ci ){
+									CMDBsid = vr.cmdb_ci;
+									if(vr.cmdb_ci.asset){
+										asst = vr.cmdb_ci.asset;
+										gAsset = asst;
+									}
+								}
+							}
+						}
+			
+						if(CMDBsid && CurrentSysId)
+							this.insertRelation(CMDBsid, CurrentSysId);
+					}
+				}
+				
+			}else if(query){
+				this.loggr.debug('Error caught inside RISCRelationship.makeRelation() while making realtionship Query for Device Id:- '+id+'. Not able to search for Relationship. Query Made:- '+query+'. SysId:- '+CurrentSysId);
+				this.loggr.warn('Error caught inside RISCRelationship.makeRelation() while making realtionship Query for Device Id:- '+id+'. Not able to search for Relationship.');
+			}
+			
+			if(devId && CurrentSysId)
+				this.findRelationByDeviceId(devId, CurrentSysId);
+			else
+				this.loggr.warn('Their is some error while fetching data for Device Id:- '+devId+'. Not able to search for Relationship. SysId:- '+CurrentSysId);
+
+			return gAsset;
+		}catch(e){
+			this.loggr.error('Error caught inside RISCRelationship.makeRelation(). Error:- '+e+' Payload:- '+payload+' SysId:- '+sys+' DeviceId:- '+id+' Type:- '+type);
+		}
+		
+	},
+	
+	findRelationByDeviceId: function(deviceid, sysId){
+		this.loggr.debug('Inside RISCRelationship.findRelationByDeviceId().');
+		try{
+			var gr;
+			gr = new GlideRecord('cmdb_ci');
+			gr.addEncodedQuery('nameLIKE'+deviceid+'^sys_id!='+sysId);
+			gr.query();
+			while(gr.next()){
+				this.insertRelation(gr.sys_id, sysId);
+			}
+		}catch(e){
+			this.loggr.error('Error caught inside RISCRelationship.findRelationByDeviceId(). Error:- '+e);
+		}
+	},
+	
+	insertRelation: function(parent, child){
+		this.loggr.debug('Inside RISCRelationship.insertRelation().');
+		try{
+			
+			var gr = new GlideRecord('cmdb_rel_ci');
+			var query = '';
+			query = query + 'parent='+parent+'^type='+gs.getProperty('x_riscn_risc_netwo.relation_sysid')+'^child='+child;
+			query = query + '^NQ';
+			query = query + 'parent='+child+'^type='+gs.getProperty('x_riscn_risc_netwo.relation_sysid')+'^child='+parent;
+			gr.addEncodedQuery(query);
+			gr.query();
+			if(gr.next())
+				return ;
+			
+			var rec = new GlideRecord('cmdb_rel_ci');
+			rec.initialize();
+			rec.parent = parent;
+			rec.type = gs.getProperty('x_riscn_risc_netwo.relation_sysid');
+			rec.child= child;
+			rec.insert();
+			
+		}catch(e){
+			this.loggr.error('Error caught inside RISCRelationship.insertRelation(). Error:- '+e);
+		}
+		
+	},
+	
+	parseJson: function(responseBody) {
+		this.loggr.debug('Inside RISCRelationship.insertRelation().');
+		try{
+			return JSON.parse(responseBody);
+		}catch(e){
+			this.loggr.error('Error caught inside RISCRelationship.insertRelation(). Error:- '+e+' Payload:- '+responseBody);
+		}
+	},
+	
+	type: 'RISCRelationship'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>girishgyani</sys_created_by>
+        <sys_created_on>2017-12-21 16:03:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>61dbfeabdb870b406cded5f0cf96196d</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_name>RISCRelationship</sys_name>
+        <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+        <sys_update_name>sys_script_include_61dbfeabdb870b406cded5f0cf96196d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-19 12:02:27</sys_updated_on>
+    </sys_script_include>
+</record_update>

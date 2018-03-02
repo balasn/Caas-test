@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Hardware Details" section_id="f8f85f91dbd28700e3b55421cf96191e" sys_domain="global" table="x_riscn_risc_netwo_risc_virtual_machines" version="3" view="risc_network">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ram</element>
+            <position>0</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 08:32:58</sys_created_on>
+            <sys_id>22329276db2607006cded5f0cf961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Details" display_value="Hardware Details" name="x_riscn_risc_netwo_risc_virtual_machines" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">f8f85f91dbd28700e3b55421cf96191e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 08:32:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hardware_model</element>
+            <position>1</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 08:32:58</sys_created_on>
+            <sys_id>a2329276db2607006cded5f0cf961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Details" display_value="Hardware Details" name="x_riscn_risc_netwo_risc_virtual_machines" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">f8f85f91dbd28700e3b55421cf96191e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 08:32:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 08:32:58</sys_created_on>
+            <sys_id>26329276db2607006cded5f0cf961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Details" display_value="Hardware Details" name="x_riscn_risc_netwo_risc_virtual_machines" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">f8f85f91dbd28700e3b55421cf96191e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 08:32:58</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hardware_vendor</element>
+            <position>3</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 08:32:58</sys_created_on>
+            <sys_id>a6329276db2607006cded5f0cf961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Details" display_value="Hardware Details" name="x_riscn_risc_netwo_risc_virtual_machines" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">f8f85f91dbd28700e3b55421cf96191e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 08:32:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hardware_serial</element>
+            <position>4</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-24 08:32:58</sys_created_on>
+            <sys_id>2a329276db2607006cded5f0cf961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Details" display_value="Hardware Details" name="x_riscn_risc_netwo_risc_virtual_machines" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">f8f85f91dbd28700e3b55421cf96191e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-24 08:32:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Hardware Details</caption>
+            <header>false</header>
+            <name>x_riscn_risc_netwo_risc_virtual_machines</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-07 11:35:23</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f8f85f91dbd28700e3b55421cf96191e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Hardware Details</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_section_f8f85f91dbd28700e3b55421cf96191e</sys_update_name>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-07 11:35:23</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="RISC Network" name="risc_network">3fb85295dbde4700e3b55421cf9619a9</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

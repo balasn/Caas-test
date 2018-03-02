@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC Location" max_length="40" name="x_riscn_risc_netwo_risc_location" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Device ID" max_length="40" name="deviceid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device Type" max_length="40" name="devicetype" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Location ID" max_length="40" name="locationid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Location Name" max_length="40" name="location_name" type="string"/>
+    </element>
+</database>

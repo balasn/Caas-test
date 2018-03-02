@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_riscn_risc_netwo.RISCLogger</api_name>
+        <client_callable>false</client_callable>
+        <description>This script is used for logging error, warning and debug information.</description>
+        <name>RISCLogger</name>
+        <script><![CDATA[var RISCLogger = Class.create();
+RISCLogger.prototype = {
+    initialize: function() {
+		var logVerbosity = gs.getProperty('x_riscn_risc_netwo.logger.level');
+		this.logLevel = ((logVerbosity!= '' && !gs.nil(logVerbosity) && logVerbosity != undefined) && (logVerbosity >= 0 && logVerbosity <= 3))  ? logVerbosity : 1;		
+    },
+
+	debug: function(s) {
+		if (this.logLevel >= 3){
+			gs.info( 'DEBUG >> '+s, 'RISC Networks');
+		}
+	},
+
+	info:  function(s) {
+		if (this.logLevel >= 2){
+			gs.info( s,'RISC Networks');
+		}
+	},
+
+	warn: function(s) {
+		if (this.logLevel >= 1){
+			gs.warn( s,'RISC Networks');
+		}
+	},
+
+	error: function(s) {
+		if (this.logLevel >= 0){
+			gs.error( s,'RISC Networks');
+			gs.error( s+"\nReport Error at:- "+gs.getProperty('x_riscn_risc_netwo.report.errors.to.email.id'),'RISC Networks');
+		}
+	},
+    type: 'RISCLogger'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>girishgyani</sys_created_by>
+        <sys_created_on>2017-11-15 10:50:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c6fa548cdb26cb006cded5f0cf96193e</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>RISCLogger</sys_name>
+        <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+        <sys_update_name>sys_script_include_c6fa548cdb26cb006cded5f0cf96193e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-18 12:18:03</sys_updated_on>
+    </sys_script_include>
+</record_update>

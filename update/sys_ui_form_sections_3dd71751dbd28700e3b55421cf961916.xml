@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="3dd71751dbd28700e3b55421cf961916" sys_domain="global" table="x_riscn_risc_netwo_risc_linux_unix_device" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-07 11:30:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b5d71751dbd28700e3b55421cf961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_linux_unix_device" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">3dd71751dbd28700e3b55421cf961916</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">d0a79351dbd28700e3b55421cf96192d</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-07 11:30:32</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-07 11:30:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b9d75f51dbd28700e3b55421cf9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_linux_unix_device" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">3dd71751dbd28700e3b55421cf961916</sys_ui_form>
+            <sys_ui_section caption="Operating System Details" display_value="Operating System Details" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">7dd71751dbd28700e3b55421cf961917</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-07 11:30:32</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-07 11:31:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9e081b51dbd28700e3b55421cf96197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_linux_unix_device" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">3dd71751dbd28700e3b55421cf961916</sys_ui_form>
+            <sys_ui_section caption="Hardware Details" display_value="Hardware Details" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">12081b51dbd28700e3b55421cf96197b</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-07 11:31:23</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-07 11:32:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d385391dbd28700e3b55421cf9619a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_linux_unix_device" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">3dd71751dbd28700e3b55421cf961916</sys_ui_form>
+            <sys_ui_section caption="CPU Details" display_value="CPU Details" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">c9385391dbd28700e3b55421cf9619a7</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-07 11:32:08</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-18 11:52:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1116aeeedb0b47406cded5f0cf961991</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_linux_unix_device" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">3dd71751dbd28700e3b55421cf961916</sys_ui_form>
+            <sys_ui_section caption="Hardware Lifecycle" display_value="Hardware Lifecycle" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">5d16aeeedb0b47406cded5f0cf96198d</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-18 11:52:38</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-12-19 09:10:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6eaa4ff2db030740e3b55421cf96192e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_linux_unix_device" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">3dd71751dbd28700e3b55421cf961916</sys_ui_form>
+            <sys_ui_section caption="OS Lifecycle" display_value="OS Lifecycle" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">e6aa4ff2db030740e3b55421cf96192a</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-12-19 09:10:58</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>6</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:21:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8a9591f9db538b40e3b55421cf961981</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_linux_unix_device" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">3dd71751dbd28700e3b55421cf961916</sys_ui_form>
+            <sys_ui_section caption="CI Relations" display_value="CI Relations" name="x_riscn_risc_netwo_risc_linux_unix_device" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">429591f9db538b40e3b55421cf96197f</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:21:15</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_riscn_risc_netwo_risc_linux_unix_device</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-07 11:30:32</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3dd71751dbd28700e3b55421cf961916</sys_id>
+            <sys_mod_count>19</sys_mod_count>
+            <sys_name>x_riscn_risc_netwo_risc_linux_unix_device</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_form_sections_3dd71751dbd28700e3b55421cf961916</sys_update_name>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2018-01-08 08:35:08</sys_updated_on>
+            <sys_user/>
+            <view display_value="RISC Network" name="risc_network">3fb85295dbde4700e3b55421cf9619a9</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

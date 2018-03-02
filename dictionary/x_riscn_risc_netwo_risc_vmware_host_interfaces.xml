@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC VMware Host Interfaces" max_length="40" name="x_riscn_risc_netwo_risc_vmware_host_interfaces" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Auto Negotiate Supported" max_length="200" name="autonegotiatesupported" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device Type" max_length="100" name="deivce_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device" max_length="200" name="device" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device ID" max_length="100" name="device_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Driver" max_length="200" name="driver" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Duplex" max_length="200" name="duplex" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="MAC" max_length="200" name="mac" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="PCI" max_length="40" name="pci" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="PNIC Key" max_length="40" name="pnickey" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Resource Pool Scheduler Allowed" max_length="100" name="resourcepoolschedulerallowed" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Speed" max_length="40" name="speedmb" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="VM Direct Path Gen to Supported" max_length="40" name="vmdirectpathgen2supported" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Wake On LAN Supported" max_length="40" name="wakeonlansupported" type="string"/>
+    </element>
+</database>

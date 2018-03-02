@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_riscn_risc_netwo_risc_stacks</basic_apply_to>
+        <basic_query_from>x_riscn_risc_netwo_stack_and_tag_intermediate</basic_query_from>
+        <insert_callback/>
+        <name>Tags</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+	
+if (!recordExists()) {
+	current.addCondition('tagid',parent.tagid);	
+}
+	else
+		return false;
+ 
+function recordExists() { 
+ 
+    var gr = new GlideRecord('x_riscn_risc_netwo_stack_and_tag_intermediate'); 
+    gr.addQuery(current.stackid,parent.stackid);
+	gr.addQuery(current.tagid,parent.tagid);
+    gr.query();
+    if(gr.hasNext())
+		return true;
+	else 
+		return false;
+}
+})(current, parent);]]></query_with>
+        <reference_field>stackid</reference_field>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>Aakashjit</sys_created_by>
+        <sys_created_on>2017-10-29 18:19:22</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>dd3e56eedb4ec3006cded5f0cf961974</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Tags</sys_name>
+        <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+        <sys_update_name>sys_relationship_dd3e56eedb4ec3006cded5f0cf961974</sys_update_name>
+        <sys_updated_by>Aakashjit</sys_updated_by>
+        <sys_updated_on>2017-10-30 08:39:39</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=dd3e56eedb4ec3006cded5f0cf961974"/>
+</record_update>

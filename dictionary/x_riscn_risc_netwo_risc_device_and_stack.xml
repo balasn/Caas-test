@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC Device and Stack" max_length="40" name="x_riscn_risc_netwo_risc_device_and_stack" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Device ID" max_length="100" name="device_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device Type" max_length="100" name="device_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Stack Id" max_length="100" name="stack_id" type="string"/>
+        <element label="Stack Name" max_length="40" name="stack_name" type="string"/>
+    </element>
+</database>

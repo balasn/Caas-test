@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC Device Lifecycle" max_length="40" name="x_riscn_risc_netwo_risc_device_lifecycle" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Bulletin URL" max_length="1000" name="bulletin_url" type="url"/>
+        <element attributes="edge_encryption_enabled=true" label="Component Class" max_length="40" name="component_class" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Component Description" max_length="100" name="component_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Component Model" max_length="100" name="component_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Component Name" max_length="100" name="component_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Component Serial" max_length="100" name="component_serial" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Component Software Version" max_length="100" name="component_software_version" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device ID" max_length="100" name="deviceid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="End Of Hardware Routine Failure Analysis Date" max_length="100" name="endofhardwareroutinefailureanalysisdate" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="End Of Hardware Service Contract Renewal Date" max_length="100" name="endofhardwareservicecontractrenewaldate" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="End Of Last Date Of Support" max_length="100" name="endoflastdateofsupport" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="End Of Life External Announcement Date" max_length="100" name="endoflifeexternalannouncementdate" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="End Of Sale Date" max_length="100" name="endofsaledate" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="End Of Software Maintenance Release Date" max_length="100" name="endofsoftwaremaintenancereleasedate" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Lifecycle Status" max_length="100" name="lifecycle_status" type="string"/>
+    </element>
+</database>

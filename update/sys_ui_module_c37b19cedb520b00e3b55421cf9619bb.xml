@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="RISC NETWORKS">bc825278dba54f00e3b55421cf9619d1</application>
+        <filter/>
+        <name>RISC Intermediate Import Table Inaccessible Windows</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_riscn_risc_netwo.user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>girishgyani</sys_created_by>
+        <sys_created_on>2017-11-09 10:22:40</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c37b19cedb520b00e3b55421cf9619bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RISC Intermediate Import Table Inaccessible Windows</sys_name>
+        <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+        <sys_update_name>sys_ui_module_c37b19cedb520b00e3b55421cf9619bb</sys_update_name>
+        <sys_updated_by>girishgyani</sys_updated_by>
+        <sys_updated_on>2017-11-09 10:22:40</sys_updated_on>
+        <table>x_riscn_risc_netwo_risc_intermediate_import_table_inaccessible_windows</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>

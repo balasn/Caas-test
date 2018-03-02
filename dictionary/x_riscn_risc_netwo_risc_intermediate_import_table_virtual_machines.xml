@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_riscn_risc_netwo_risc_intermediate_import" label="RISC Intermediate Import Table Virtual Machines" max_length="40" name="x_riscn_risc_netwo_risc_intermediate_import_table_virtual_machines" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="os_end_of_mainstream_support" max_length="40" name="end_of_mainstream_support" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="os_Bulletin_url" max_length="40" name="os_bulletin_url" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="os_end_of_extended_support" max_length="40" name="os_end_of_extended_support" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="os_hardware_model" max_length="40" name="os_hardware_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="os_lifecycle_start_date" max_length="40" name="os_lifecycle_start_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="os_lifecycle_status" max_length="40" name="os_lifecycle_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="os_os" max_length="40" name="os_os" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC HBA" max_length="40" name="x_riscn_risc_netwo_risc_hba" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Bus" max_length="100" name="bus" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Device" max_length="100" name="device" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device ID" max_length="100" name="deviceid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device Type" max_length="100" name="device_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Driver" max_length="100" name="driver" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="HBA Key" max_length="100" name="hbakey" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Model" max_length="100" name="model" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Nodewwn" max_length="100" name="nodewwn" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="PCI" max_length="100" name="pci" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Portwwn" max_length="100" name="portwwn" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Speed" max_length="40" name="speed" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Status" max_length="100" name="status" type="string"/>
+    </element>
+</database>

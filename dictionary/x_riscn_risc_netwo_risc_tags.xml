@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC Tags" max_length="40" name="x_riscn_risc_netwo_risc_tags" type="collection">
+        <element attributes="edge_encryption_enabled=true" display="true" label="Tag ID" max_length="100" name="tagid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Tag Key" max_length="40" name="tagkey" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Tag Value" max_length="1000" name="tagvalue" type="string"/>
+    </element>
+</database>

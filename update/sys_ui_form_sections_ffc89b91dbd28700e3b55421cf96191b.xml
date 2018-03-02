@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="ffc89b91dbd28700e3b55421cf96191b" sys_domain="global" table="x_riscn_risc_netwo_risc_virtual_machines" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-07 11:34:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7bc89b91dbd28700e3b55421cf96191c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_virtual_machines" name="x_riscn_risc_netwo_risc_virtual_machines" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">ffc89b91dbd28700e3b55421cf96191b</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_virtual_machines" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">1dc89b91dbd28700e3b55421cf9619f0</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-07 11:34:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-07 11:34:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3fc89b91dbd28700e3b55421cf96191d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_virtual_machines" name="x_riscn_risc_netwo_risc_virtual_machines" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">ffc89b91dbd28700e3b55421cf96191b</sys_ui_form>
+            <sys_ui_section caption="Operating System Details" display_value="Operating System Details" name="x_riscn_risc_netwo_risc_virtual_machines" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">33c89b91dbd28700e3b55421cf96191d</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-07 11:34:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-07 11:35:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>78f85f91dbd28700e3b55421cf961920</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_virtual_machines" name="x_riscn_risc_netwo_risc_virtual_machines" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">ffc89b91dbd28700e3b55421cf96191b</sys_ui_form>
+            <sys_ui_section caption="Hardware Details" display_value="Hardware Details" name="x_riscn_risc_netwo_risc_virtual_machines" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">f8f85f91dbd28700e3b55421cf96191e</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-07 11:35:23</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-07 11:36:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3a19df91dbd28700e3b55421cf961998</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_virtual_machines" name="x_riscn_risc_netwo_risc_virtual_machines" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">ffc89b91dbd28700e3b55421cf96191b</sys_ui_form>
+            <sys_ui_section caption="CPU Details" display_value="CPU Details" name="x_riscn_risc_netwo_risc_virtual_machines" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">3a191791dbd28700e3b55421cf961944</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-11-07 11:36:04</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>girishgyani</sys_created_by>
+            <sys_created_on>2017-12-28 08:25:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>efa6593ddb538b40e3b55421cf96199c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_virtual_machines" name="x_riscn_risc_netwo_risc_virtual_machines" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">ffc89b91dbd28700e3b55421cf96191b</sys_ui_form>
+            <sys_ui_section caption="CI Relations" display_value="CI Relations" name="x_riscn_risc_netwo_risc_virtual_machines" sys_domain="global" view="3fb85295dbde4700e3b55421cf9619a9">e3a6193ddb538b40e3b55421cf961919</sys_ui_section>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2017-12-28 08:25:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_riscn_risc_netwo_risc_virtual_machines</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-11-07 11:34:47</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ffc89b91dbd28700e3b55421cf96191b</sys_id>
+            <sys_mod_count>17</sys_mod_count>
+            <sys_name>x_riscn_risc_netwo_risc_virtual_machines</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_form_sections_ffc89b91dbd28700e3b55421cf96191b</sys_update_name>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2018-01-08 08:36:03</sys_updated_on>
+            <sys_user/>
+            <view display_value="RISC Network" name="risc_network">3fb85295dbde4700e3b55421cf9619a9</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

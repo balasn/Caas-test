@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC Device Issues" max_length="40" name="x_riscn_risc_netwo_risc_device_issues" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Affected Instance Name" max_length="100" name="affected_instance_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device ID" max_length="100" name="deviceid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device Type" max_length="100" name="device_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Issue Description" max_length="1000" name="issue_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Issue Detail" max_length="100" name="issue_detail" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Issue Metric" max_length="100" name="issue_metric" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Issue Name" max_length="100" name="issue_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Problem ID" max_length="100" name="problemid" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,1310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_riscn_risc_netwo.RISC_Populate_Queue</api_name>
+        <client_callable>false</client_callable>
+        <description>This is the main script where all the operations are performed on json.</description>
+        <name>RISC_Populate_Queue</name>
+        <script><![CDATA[var RISC_Populate_Queue = Class.create();
+RISC_Populate_Queue.prototype = {
+	initialize: function() {
+		this.token = '';
+		this.assessmentCode = '';
+		this.api = '';
+		this.user='';
+		this.pwd='';
+		this.assessCode='';
+		this.host_api='';
+		this.loggr = new RISCLogger();
+		
+		this.sno='';
+	},
+	
+	setApi: function(hostApi) {
+		this.loggr.debug('Inside RISC_T_Queue.setApi().');
+		try{
+			gs.setProperty("x_riscn_risc_netwo.api",hostApi,"");
+		}catch(e){
+			this.loggr.error('Error Caught inside RISC_Populate_Queue.setApi() while setting system property. Error:- '+e);
+		}
+	},
+	
+	getEncryptedPassword: function(plainPassword, apiKey) {
+		this.loggr.debug('Inside RISC_Populate_Queue.getEncryptedPassword().');
+		try{
+			//var apiKey = '0dba3457420157d712410cdab4420721';
+			var complexKey = apiKey + MD5(plainPassword).toUpperCase();
+			return MD5(complexKey);
+		}catch(e){
+			this.loggr.error('Error Caught inside RISC_Populate_Queue.getEncryptedPassword() while encrypting password. Error:- '+e);
+		}
+		
+	},
+	
+	getAuthecationPayload: function(username, encryptedPassword, assessmentCode) {
+		
+		return '{"userid":"' + username + '","password":"' + encryptedPassword + '", "assessmentcode": "' + assessmentCode + '"}';
+		},
+		
+		getTokenKey: function(username, password, assessmentCode, apiKey) {
+			this.loggr.debug('Inside RISC_Populate_Queue.getTokenKey().');
+			try{
+				this.user=username;
+				this.pwd=password;
+				this.assessCode=assessmentCode;
+				this.api = gs.getProperty('x_riscn_risc_netwo.api');
+				//gs.info("API key syn = "+apiKey);
+				var encryptedPassword = this.getEncryptedPassword(password, apiKey);
+				var requestPayload = this.getAuthecationPayload(username, encryptedPassword, assessmentCode);
+				var response = this.makeApiCall(this.api + "/getAuthToken", 'post', requestPayload, '');
+				var authentication = this.parseJson(response);
+				return authentication.token;
+			}catch(e){
+				this.loggr.error('Error Caught inside RISC_Populate_Queue.getTokenKey(). Error:- '+e);
+			}
+			
+		},
+		
+		setSessionVariables: function(tokenCode, assmntCode) {
+			this.loggr.debug('Inside RISC_Populate_Queue.setSessionVariables().');
+			try{
+				this.token = tokenCode;
+				this.assessmentCode = assmntCode;
+				gs.setProperty("x_riscn_risc_netwo.token", tokenCode, "RISC Authentication Token");
+				gs.setProperty("x_riscn_risc_netwo.assessment_code", assmntCode, "RISC Assessment Code");
+			}catch(e){
+				this.loggr.error('Error Caught inside RISC_Populate_Queue.setSessionVariables() while setting system properties. Error:- '+e);
+			}
+			
+		},
+		
+		makeApiCall: function(endpoint, method, body, page)
+		{
+			this.loggr.debug('Inside RISC_Populate_Queue.makeApiCall(). API call:- '+endpoint);
+			this.loggr.info('Making API Call '+endpoint);
+			try{
+				var token = gs.getProperty('x_riscn_risc_netwo.token');
+				var code = gs.getProperty('x_riscn_risc_netwo.assessment_code');
+				
+				var request = new sn_ws.RESTMessageV2();
+				request.setEndpoint(endpoint);
+				request.setHttpMethod(method);
+				
+				if (method === 'post') {
+					request.setRequestBody(body);
+				}
+				
+				request.setRequestHeader("Accept", "application/json");
+				request.setRequestHeader("Content-Type", "application/json");
+				request.setRequestHeader("token", token);
+				request.setRequestHeader("assessmentcode", code);
+				request.setRequestHeader("page", page);
+				
+				var response = request.execute();
+				var status = response.getStatusCode();
+				
+				if (response.haveError() || status != 200) {
+					var errorMessage = response.getErrorMessage();
+					this.loggr.debug('Error Response Returned. Error Code:- '+status+'. Error Message:- '+errorMessage);
+					this.loggr.info('Error Response Returned. Error Code:- '+status+'. Error Message:- '+errorMessage);
+					return errorMessage;
+				}
+				
+				return response.getBody();
+				
+			}catch(e){
+				this.loggr.error('Error Caught inside RISC_Populate_Queue.makeApiCall(). Error:- '+e);
+			}
+		},
+		
+		insertDevicesApiIntoQueue: function() {
+			this.loggr.debug('Inside RISC_Populate_Queue.insertDevicesApiIntoQueue().');
+			this.loggr.info('Inserting APIs of device, stacks and tags into queue for processing.');
+			try{
+				var deviceTypes = this.getDeviceTypes();
+				var apis = [];
+				
+				for (var i = 0; i < deviceTypes.length; i++) {
+					if( deviceTypes[i] != 'Total' ){
+						apis.push(deviceTypes[i]);
+						apis.push(this.api + "/assets/getAssets/paginated/byType/" + deviceTypes[i].replaceAll(' ','%20'));
+					}
+				}
+				
+				apis.push('stacks');
+				apis.push(this.api + "/stacks/getSummary");
+				
+				apis.push('tags');
+				apis.push(this.api+"/tags/getTags");
+				
+				var que = new x_riscn_risc_netwo.RISC_Queue_Util();
+				for(var kk =0 ; kk < apis.length ; kk=kk+2 ){
+					que.insertIntoQueue(apis[kk], 'api', apis[kk+1] , 'get', '');
+					que.wait(2000);
+				}
+			}catch(e){
+				this.loggr.error('Error Caught inside RISC_Populate_Queue.insertDevicesApiIntoQueue(). Error:- '+e);
+			}
+			
+		},
+		
+		getDeviceTypes: function() {
+			this.loggr.debug('Inside RISC_Populate_Queue.getDeviceTypes().');
+			this.loggr.info('Getting all the device types.');
+			try{
+				var response = this.makeApiCall(this.api + "/assets/getSummary", 'get', '', '');
+				var devices = this.parseJson(response);
+				var deviceTypes = [];
+				for (var i = 0; i < devices.assets.length; i++) {
+					deviceTypes.push(devices.assets[i].devicetype);
+				}
+				return deviceTypes;
+			}catch(e){
+				this.loggr.error('Error Caught inside RISC_Populate_Queue.getDeviceTypes(). Error:- '+e);
+			}
+			
+		},
+		
+		
+		addMultipleDevicesToIntermediateTable: function(device, json) {
+			this.loggr.debug('Inside RISC_Populate_Queue.addMultipleDevicesToIntermediateTable().');
+			this.loggr.info('Adding '+device+' to intermediate tables.');						
+			
+			try{
+				var dev = device;
+				var glideRecord = '';								
+				
+				if( dev == 'Basic Devices' )
+					glideRecord = new GlideRecord('x_riscn_risc_netwo_risc_intermediate_import_table_basic_devices');
+				else if( dev == 'Cisco CallManagers' )
+					glideRecord = new GlideRecord('x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers');
+				else if( dev == 'Inaccessible Devices' )
+					glideRecord = new GlideRecord('x_riscn_risc_netwo_risc_intermediate_import_table_inaccessible_devices');
+				else if( dev == 'Inaccessible Network Infrastructure' )
+					glideRecord = new GlideRecord('x_riscn_risc_netwo_risc_intermediate_import_table_inaccessible_network_infra');
+				else if( dev == 'Inaccessible Windows Device' )
+					glideRecord = new GlideRecord('x_riscn_risc_netwo_risc_intermediate_import_table_inaccessible_windows');
+				else if( dev == 'IP Phones' )
+					glideRecord = new GlideRecord('x_riscn_risc_netwo_risc_intermediate_import_table_ip_phones');
+				else if( dev == 'Linux and Unix Devices' )
+					glideRecord = new GlideRecord('x_riscn_risc_netwo_risc_intermediate_import_table_linux_unix_devices');
+				else if( dev == 'Network Infrastructure' )
+					glideRecord = new GlideRecord('x_riscn_risc_netwo_risc_intermediate_import_table_network_infrastructure');
+				else if( dev == 'Virtual Machines' )
+					glideRecord = new GlideRecord('x_riscn_risc_netwo_risc_intermediate_import_table_virtual_machines');
+				else if( dev == 'VMware Hosts' )
+					glideRecord = new GlideRecord('x_riscn_risc_netwo_risc_intermediate_import_table_vmware_hosts');
+				else if( dev == 'Windows Servers' )
+					glideRecord = new GlideRecord('x_riscn_risc_netwo_risc_intermediate_import_table_windows_servers');
+				else if( dev == 'Windows Workstations' )
+					glideRecord = new GlideRecord('x_riscn_risc_netwo_risc_intermediate_import_table_windows_workstations');
+				else if(dev == 'stacks')
+					this.populateStacks(json);
+				else if(dev == 'tags')
+					this.populateTags(json);
+				else
+					return;
+				
+				var interfacegr = '';
+				if( dev == 'Network Infrastructure' || dev == 'Linux and Unix Devices' || dev == 'Virtual Machines')
+					interfacegr = new GlideRecord('x_riscn_risc_netwo_risc_network_interface');
+				else if(dev == 'VMware Hosts')
+					interfacegr=new GlideRecord('x_riscn_risc_netwo_risc_vmware_host_interfaces');
+				else if(dev=='Windows Servers')
+					interfacegr=new GlideRecord('x_riscn_risc_netwo_risc_windows_server_interface');
+				else
+					interfacegr = new GlideRecord('x_riscn_risc_netwo_risc_interfaces');
+				
+				var ipgr = new GlideRecord("x_riscn_risc_netwo_risc_ips");
+				var entityGlide = new GlideRecord("x_riscn_risc_netwo_risc_network_entity");
+				var checksumMap = this.getChecksumForDevices(device);
+				var checkSumGlide = new GlideRecord('x_riscn_risc_netwo_risc_device_checksum');
+				var hbagr=new GlideRecord('x_riscn_risc_netwo_risc_hba');
+				var scsilungr=new GlideRecord('x_riscn_risc_netwo_risc_scsilun');
+				var diskgr=new GlideRecord('x_riscn_risc_netwo_risc_windows_server_disks');
+				var grStorage = new GlideRecord('x_riscn_risc_netwo_risc_linux_and_unix_storage');
+				var device_lifecyclegr=new GlideRecord('x_riscn_risc_netwo_risc_device_lifecycle');
+				var device_issuesgr=new GlideRecord('x_riscn_risc_netwo_risc_device_issues');
+				
+				if(dev != 'stacks' && dev != 'tags'){
+					
+					json = this.parseJson(json);
+					for(var i=0; i < json.assets.length; i++){
+						var md5Checksum = MD5(JSON.stringify(json.assets[i]));
+						
+						if(checksumMap[json.assets[i].deviceid+''] != md5Checksum){
+							
+							var dvce = new Device();
+							
+							dvce.id = json.assets[i].deviceid+'';
+							
+							dvce = this.addDeviceToIntermediateTable(json.assets[i], dev, glideRecord, interfacegr, ipgr, entityGlide,hbagr,scsilungr,diskgr, grStorage,device_lifecyclegr,device_issuesgr, dvce);
+							this.saveUpdateChecksumForDevice(json.assets[i].deviceid+'',device,md5Checksum,checkSumGlide);
+							
+						}						
+					}
+				}
+			}catch(e){
+				this.loggr.error('Error Caught inside RISC_Populate_Queue.addMultipleDevicesToIntermediateTable(). Error:- '+e);
+			}
+			
+		},
+		
+		saveUpdateChecksumForDevice: function(deviceId,deviceType,md5Checksum, glide, type){
+			
+			this.loggr.debug('Inside RISC_Populate_Queue.saveUpdateChecksumForDevice().');
+			try{
+				glide.addQuery('device_id',deviceId+'');
+				glide.query();
+				
+				if(glide.next()){
+					this.loggr.info('Updating CheckSum for '+deviceType+' with deviceId '+deviceId);
+					glide.checksum = md5Checksum;
+					glide.update();
+				}else{
+					this.loggr.info('Inserting new CheckSum for '+deviceType+' with deviceId '+deviceId);
+					glide.initialize();
+					glide.checksum = md5Checksum;
+					glide.device_id = deviceId+'';
+					glide.device_type = deviceType;
+					glide.insert();
+				}
+			}catch(e){
+				this.loggr.error('Error Caught inside RISC_Populate_Queue.saveUpdateChecksumForDevice(). Error:- '+e);
+			}
+			
+		},
+		
+		getChecksumForDevices: function(deviceType){
+			
+			this.loggr.debug('Inside RISC_Populate_Queue.getChecksumForDevices(). DeviceType:- '+deviceType);
+			this.loggr.info('Getting checksum of all the devices for '+deviceType);
+			try{
+				var checkSumGlide = new GlideRecord('x_riscn_risc_netwo_risc_device_checksum');
+				checkSumGlide.addQuery('device_type',deviceType);
+				checkSumGlide.query();
+				
+				var map = {};
+					var count = 0;
+					while(checkSumGlide.next()){
+						map[checkSumGlide.device_id+''] = checkSumGlide.checksum+'';
+						count++;
+					}
+					return map;
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.getChecksumForDevices(). Error:- '+e);
+				}
+				
+			},
+			
+			populateTags: function(json){
+				
+				this.loggr.debug('Inside RISC_Populate_Queue.populateTags().');
+				try{
+					if(!json) return;
+						
+					this.loggr.info('Populating Tags Table.');
+					var checksumMap = this.getChecksumForDevices('tags');
+					var checkSumGlide = new GlideRecord('x_riscn_risc_netwo_risc_device_checksum');
+					
+					var tagJson = this.parseJson(json);					
+					
+					for(var i = 0; i < tagJson.tags.length; i++){
+						var md5Checksum = MD5(JSON.stringify(tagJson.tags[i]));
+						
+						if(checksumMap[tagJson.tags[i].tagid+''] != md5Checksum){
+							var tagGlide = new GlideRecord('x_riscn_risc_netwo_risc_tags');
+							tagGlide.addQuery('tagid',tagJson.tags[i].tagid+'');
+							tagGlide.setWorkflow(false);
+							tagGlide.deleteMultiple();
+							
+							var tagGlide1 = new GlideRecord('x_riscn_risc_netwo_risc_tags');
+							tagGlide1.initialize();
+							tagGlide1.tagid = tagJson.tags[i].tagid+'';
+							tagGlide1.tagvalue = tagJson.tags[i].tagvalue;
+							tagGlide1.tagkey = tagJson.tags[i].tagkey;
+							tagGlide1.insert();
+							
+							this.saveUpdateChecksumForDevice(tagJson.tags[i].tagid+'','tags',md5Checksum,checkSumGlide);
+						}
+						
+					}
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.populateTags(). Error:- '+e);
+				}
+				
+			},
+			
+			populateStacks: function(json){
+				
+				this.loggr.debug('Inside RISC_Populate_Queue.populateStacks().');
+				try{
+					if(!json) return;
+						
+					this.loggr.info('Populating Stacks table.');
+					var checksumMap = this.getChecksumForDevices('stacks');
+					var checkSumGlide = new GlideRecord('x_riscn_risc_netwo_risc_device_checksum');
+					
+					var stackJson = this.parseJson(json);
+					var stackIds = [];
+					
+					for( var i=0; i < stackJson.assets.length; i++){
+						var md5Checksum = MD5(JSON.stringify(stackJson.assets[i]));
+						
+						if(checksumMap[stackJson.assets[i].stackid+''] != md5Checksum){
+							var stackgr = new GlideRecord('x_riscn_risc_netwo_risc_stacks');
+							stackgr.addQuery('stackid',stackJson.assets[i].stackid+'');
+							stackgr.setWorkflow(false);
+							stackgr.deleteMultiple();
+							
+							var stackglide = new GlideRecord('x_riscn_risc_netwo_risc_stacks');
+							this.insertIntoStack(stackJson.assets[i], stackglide);
+							stackIds.push(stackJson.assets[i].stackid);
+							this.saveUpdateChecksumForDevice(stackJson.assets[i].stackid+'','stacks',md5Checksum,checkSumGlide);
+						}
+						
+					}
+					
+					var connectivityApi = '/stacks/getConnectivity/';
+					this.loggr.info('Making Stack Relationships.');
+					var connGlide = new GlideRecord('x_riscn_risc_netwo_risc_stacks_relationship');
+					
+					for( var j = 0; j < stackIds.length; j++){
+						if(!this.api){
+							this.api = gs.getProperty('x_riscn_risc_netwo.api');
+						}
+						
+						var connectionJson = this.makeApiCall(this.api + connectivityApi+ stackIds[j], 'get', '', '');
+						
+						var connections = this.parseJson(connectionJson);
+						if(!connections || !connections.connectivity)
+							continue;
+						
+						for( var k = 0; k < connections.connectivity.length; k++){
+							if(connections.connectivity[k].source_locationid == stackIds[j]){
+								connGlide.initialize();
+								connGlide.source_stack = connections.connectivity[k].source_locationid;
+								connGlide.destination_stack = connections.connectivity[k].dest_location;
+								connGlide.insert();
+							}
+						}
+					}
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.populateStacks(). Error:- '+e);
+				}
+				
+				
+			},
+			
+			insertIntoStack: function(stack, stackGlide){
+				
+				this.loggr.debug('Inside RISC_Populate_Queue.insertIntoStack().');
+				this.loggr.info('Populating stacks table.');
+				try{
+					stackGlide.initialize();
+					stackGlide.stackid = stack.stackid;
+					stackGlide.stack_name = stack.stack_name;
+					stackGlide.name = stack.stackid;
+					stackGlide.insert();
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.insertIntoStack(). Error:- '+e);
+				}
+				
+			},
+			
+			addDeviceToIntermediateTable: function(json, device, glideRecord, interfacegr, ipgr, entityGlide, hbagr, scsilungr, diskgr, grStorage, device_lifecyclegr, device_issuesgr, dvce) {
+				
+				this.loggr.debug('Inside RISC_Populate_Queue.addDeviceToIntermediateTable().');
+				try{
+					var dev = device;
+					var data = json.data;
+					var stack_json=json.stacks;
+					var tag_json=json.tags;
+					var location_json = json.location;
+					
+					if(location_json){
+						this.removeLocation(json.deviceid);
+						this.insertLocation(location_json,json.deviceid,device);
+					}
+					if(stack_json){
+						this.populateDeviceAndStack(stack_json,json.deviceid,device);
+					}
+					if(tag_json){
+						this.populateDeviceAndTag(tag_json,json.deviceid,device);
+					}
+					glideRecord.initialize();
+					
+					
+					this.removeInterface(device, json.deviceid);
+					this.removeIp(json.deviceid);
+					this.removeDeviceLifeCycle(json.deviceid);
+					this.removeEntity(json.deviceid);
+					this.removeHba(json.deviceid);
+					this.removeScsilun(json.deviceid);
+					this.removeDisks(json.deviceid);
+					this.removeStorage(json.deviceid);
+					this.removeDeviceIssues(json.deviceid);
+					
+					dvce = this.populateGlideRecord(data, glideRecord, interfacegr, ipgr, dev, entityGlide, hbagr, scsilungr, diskgr, grStorage, device_lifecyclegr, device_issuesgr, dvce);					
+					
+					if(parseFloat(json.licensed)>0)
+						glideRecord.licensed = 'Yes';
+					else
+						glideRecord.licensed = 'No';
+					glideRecord.device = device;
+					glideRecord.generic_device_type = device;
+					
+					
+					dvce.serialNo = this.sno;
+					this.sno='';
+					var que = new x_riscn_risc_netwo.RISC_Queue_Util();
+					que.insertIntoRelationshipTable(json.deviceid+'', dev, JSON.stringify(dvce) );
+					
+					
+					glideRecord.insert();
+					return dvce;
+					
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.addDeviceToIntermediateTable(). Error:- '+e);
+				}
+				
+			},
+			
+			removeLocation: function(id) {
+				this.loggr.debug('Inside RISC_Populate_Queue.removeLocation().');
+				try{
+					var locgr = new GlideRecord("x_riscn_risc_netwo_risc_location");
+					locgr.addQuery('deviceid',id+'');
+					locgr.setWorkflow(false);
+					locgr.deleteMultiple();
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.removeLocation(). Error:- '+e);
+				}
+				
+			},
+			
+			insertLocation:function(location_json,deviceid,devicetype)
+			{
+				this.loggr.debug('Inside RISC_Populate_Queue.insertLocation().');
+				try{
+					var gr=new GlideRecord('x_riscn_risc_netwo_risc_location');
+					for(var i=0; i<location_json.length; i++)
+						{
+						gr.initialize();
+						gr.deviceid=deviceid+'';
+						gr.devicetype=devicetype;
+						gr.location_name=location_json[i].location_name;
+						gr.locationid=location_json[i].locationid;
+						gr.insert();
+					}
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.insertLocation(). Error:- '+e);
+				}
+				
+				
+			},
+			
+			populateDeviceAndTag:function(tag_json,deviceid,device)
+			{
+				this.loggr.debug('Inside RISC_Populate_Queue.populateDeviceAndTag().');
+				try{
+					var gr=new GlideRecord('x_riscn_risc_netwo_risc_device_and_tags');
+					gr.addQuery('device_id',deviceid+'');
+					gr.setWorkflow(false);
+					gr.deleteMultiple();
+					
+					var gr1=new GlideRecord('x_riscn_risc_netwo_risc_device_and_tags');
+					for(var i=0;i<tag_json.length;i++)
+						{
+						gr1=new GlideRecord('x_riscn_risc_netwo_risc_device_and_tags');
+						gr1.initialize();
+						gr1.device_id=deviceid+'';
+						gr1.tag_id=tag_json[i].tagid+'';
+						gr1.device_type=device;
+						gr1.insert();
+					}
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.populateDeviceAndTag(). Error:- '+e);
+				}
+				
+			},
+			
+			
+			populateDeviceAndStack:function(stack_json,deviceid,device)
+			{
+				this.loggr.debug('Inside RISC_Populate_Queue.populateDeviceAndStack().');
+				try{
+					var gr=new GlideRecord('x_riscn_risc_netwo_risc_device_and_stack');
+					gr.addQuery('device_id', deviceid+'');
+					gr.setWorkflow(false);
+					gr.deleteMultiple();
+					
+					for(var i=0;i<stack_json.length;i++)
+						{
+						
+						if(deviceid!=''&&stack_json[i].stackid!=''){
+							gr.initialize();
+							gr.device_id=deviceid+'';
+							gr.stack_id=stack_json[i].stackid;
+							gr.stack_name=stack_json[i].stack_name;								
+							gr.device_type=device;
+							gr.insert();
+						}
+					}
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.populateDeviceAndStack(). Error:- '+e);
+				}
+				
+			},
+			insertDeviceLifeCycle:function(device_lifecyclegr,device_lifecyclejson,id,device){
+				
+				this.loggr.debug('Inside RISC_Populate_Queue.insertDeviceLifeCycle().');
+				try{
+					var dev = device;
+					if (device_lifecyclejson.constructor === Array && (id!=0 || id!="0")) {
+						var keys = Object.keys(device_lifecyclejson);
+						for (var k in keys) {
+							var p = device_lifecyclejson[k];
+							device_lifecyclegr.initialize();
+							device_lifecyclegr.deviceid = id+'';							
+							device_lifecyclegr.bulletin_url=p.bulletin_url;
+							device_lifecyclegr.component_class=p.component_class;
+							device_lifecyclegr.component_description=p.component_description;
+							device_lifecyclegr.component_model=p.component_model;
+							device_lifecyclegr.component_name=p.component_name;
+							device_lifecyclegr.component_serial=p.component_serial;
+							device_lifecyclegr.component_software_version=p.component_software_version;
+							device_lifecyclegr.endofhardwareroutinefailureanalysisdate=p.endofhardwareroutinefailureanalysisdate;
+							device_lifecyclegr.endofhardwareservicecontractrenewaldate=p.endofhardwareservicecontractrenewaldate;
+							device_lifecyclegr.endoflastdateofsupport=p.endoflastdateofsupport;
+							device_lifecyclegr.endoflifeexternalannouncementdate=p.endoflifeexternalannouncementdate;
+							device_lifecyclegr.endofsaledate=p.endofsaledate;
+							device_lifecyclegr.endofsoftwaremaintenancereleasedate=p.endofsoftwaremaintenancereleasedate;
+							device_lifecyclegr.lifecycle_status=p.lifecycle_status;
+							device_lifecyclegr.insert();
+						}
+					}
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.insertDeviceLifeCycle(). Error:- '+e);
+				}
+			},
+				
+			removeDeviceLifeCycle:function(id)
+			{
+				this.loggr.debug('Inside RISC_Populate_Queue.removeDeviceLifeCycle().');
+				try{
+					var device_lifecyclegr = new GlideRecord("x_riscn_risc_netwo_risc_device_lifecycle");
+					device_lifecyclegr.addQuery('deviceid',id+'');
+					device_lifecyclegr.setWorkflow(false);
+					device_lifecyclegr.deleteMultiple();
+					
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.removeDeviceLifeCycle(). Error:- '+e);
+				}
+			},
+	
+			insertDeviceIssues:function(device_issuesgr,device_issuesjson,id,device){
+				
+				this.loggr.debug('Inside RISC_Populate_Queue.insertDeviceIssues().');
+				try{					
+					if (device_issuesjson.constructor === Array && (id!=0 || id!="0")) {
+						var keys = Object.keys(device_issuesjson);
+						for (var k in keys) {
+							var p = device_issuesjson[k];
+							device_issuesgr.initialize();
+							device_issuesgr.deviceid = id+'';
+							device_issuesgr.device_type=device;
+							device_issuesgr.affected_instance_name=p.affected_instance_name;
+							device_issuesgr.issue_description=p.issue_description;
+							device_issuesgr.issue_detail=p.issue_detail;
+							device_issuesgr.issue_metric=p.issue_metric;
+							device_issuesgr.issue_name=p.issue_name;
+							device_issuesgr.problemid=p.problemid;
+							device_issuesgr.insert();
+						}
+					}
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.insertDeviceIssues(). Error:- '+e);
+				}
+				
+			},
+			removeDeviceIssues:function(id)
+				{
+					this.loggr.debug('Inside RISC_Populate_Queue.removeDeviceIssues().');
+				try{
+					var device_issuesgr = new GlideRecord("x_riscn_risc_netwo_risc_device_issues");
+					device_issuesgr.addQuery('deviceid',id+'');
+					device_issuesgr.setWorkflow(false);
+					device_issuesgr.deleteMultiple();
+					
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.removeDeviceIssues(). Error:- '+e);
+				}
+				},
+	
+			populateGlideRecord : function(data, glideRecord, interfacegr, ipgr, device, entityGlide, hbagr, scsilungr, diskgr, grStorage, device_lifecyclegr, device_issuesgr, dvce)
+			{
+				this.loggr.debug('Inside RISC_Populate_Queue.populateGlideRecord().');
+				try{													
+					
+					if (data.constructor === Object) {
+						var assetData = Object.keys(data);												
+						
+						for (var k in assetData) {
+							
+							if (assetData[k] == 'interfaces'){
+								dvce = this.insertInterface(interfacegr, data.interfaces, data.deviceid, device, dvce);
+							}else if (assetData[k] == 'ips'){
+								dvce = this.insertIp(ipgr, data.ips, data.deviceid, device, dvce);
+							}else if (assetData[k] == 'entities'){
+								this.insertEntity(entityGlide, data.entities, data.deviceid, device);
+							}else if (assetData[k] == 'hba'){
+								this.insertHba(hbagr, data.hba, data.deviceid, device);
+							}else if (assetData[k] == 'scsilun'){
+								this.insertScsilun(scsilungr, data.scsilun, data.deviceid, device);
+							}else if(assetData[k] == 'disks'){
+								this.insertDisk(diskgr,data.disks,data.deviceid,device);
+							} else if(assetData[k] == 'storage'){
+								this.insertStorage(grStorage, data.storage, data.deviceid, device);
+							}else if(assetData[k]=='device_lifecycle'){
+								this.insertDeviceLifeCycle(device_lifecyclegr,data.device_lifecycle,data.deviceid,device);								
+							}else if(assetData[k]=='device_issues'){
+								this.insertDeviceIssues(device_issuesgr,data.device_issues,data.deviceid,device);								
+							}else if(assetData[k]=='hardware_lifecycle'){
+								glideRecord.bulletin_url=data[assetData[k]].bulletin_url;
+								glideRecord.end_of_life_date=data[assetData[k]].end_of_life_date;
+								glideRecord.lifecycle_state=data[assetData[k]].lifecycle_state;
+								glideRecord.model=data[assetData[k]].model;
+								glideRecord.retired_date=data[assetData[k]].retired_date;
+								glideRecord.status=data[assetData[k]].status;
+							}
+							else if(assetData[k]=='os_lifecycle'){
+								glideRecord.os_bulletin_url=data[assetData[k]].bulletin_url;
+								glideRecord.os_end_of_extended_support=data[assetData[k]].end_of_extended_support;
+								glideRecord.os_end_of_mainstream_support=data[assetData[k]].end_of_mainstream_support;
+								glideRecord.os_hardware_model=data[assetData[k]].hardware_model;
+								glideRecord.os_lifecycle_start_date=data[assetData[k]].lifecycle_start_date;
+								glideRecord.os_lifecycle_status=data[assetData[k]].lifecycle_status;
+								glideRecord.os_os=data[assetData[k]].os;
+							}
+							
+							else{
+								if(assetData[k] == 'memory'||assetData[k] =='processor_ram'){
+									var mb='';
+									if(parseFloat(data[assetData[k]])>0)
+										mb = parseFloat(data[assetData[k]])/(1024*1024);
+									else
+										mb= parseFloat(data[assetData[k]]);
+									glideRecord[assetData[k]] = mb+'';
+								}else if(assetData[k] == 'cpu_frequqency'||assetData[k] == 'cpu_frequency' || assetData[k] == 'cpuhz'){
+									var mhz='';
+									if(parseFloat(data[assetData[k]])>0)
+										mhz=parseFloat(parseFloat(data[assetData[k]])/(1000000.0));
+									else
+										mhz=parseFloat(data[assetData[k]]);
+									glideRecord[assetData[k]] = mhz+'';
+								} else if(assetData[k] == 'deviceid'){
+									glideRecord[assetData[k]] = data[assetData[k]]+'';
+								}else if(assetData[k] == 'collection_type'){
+									if( data[assetData[k]] != 'VMware API' )
+										glideRecord[assetData[k]] = data[assetData[k]];
+									else if( !glideRecord[assetData[k]] )
+										glideRecord[assetData[k]] = data[assetData[k]];
+								}
+								else{
+									glideRecord[assetData[k]] = data[assetData[k]];
+								}		
+								
+								if(assetData[k] == 'serial_number' || assetData[k] == 'hardware_serial'){
+									var srial = data[assetData[k]];
+									this.sno = (srial)?srial:this.sno;
+								}
+								
+							}
+						}												
+						
+					} else {
+						var key = Object.keys(data);
+						this.loggr.debug('Recursive call to RISC_Populate_Queue.populateGlideRecord().');
+						for (var ky in key)
+							dvce = this.populateGlideRecord(data[ky], glideRecord,interfacegr, ipgr, device, entityGlide, hbagr, scsilungr, diskgr, grStorage, device_lifecyclegr, device_issuesgr, dvce);						
+					}
+					
+					return dvce;
+					
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.populateGlideRecord(). Error:- '+e);
+				}
+				
+				
+			},
+			removeDisks:function(id){
+				this.loggr.debug('Inside RISC_Populate_Queue.removeDisks().');
+				try{
+					var discgr=new GlideRecord('x_riscn_risc_netwo_risc_windows_server_disks');
+					discgr.addQuery('deviceid',id+'');
+					discgr.setWorkflow(false);
+					discgr.deleteMultiple();
+				}
+				catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.removeDisks(). Error:- '+e);
+				}
+			},
+			
+			insertDisk:function(diskgr,diskJson,deviceid,device){
+				
+				this.loggr.debug('Inside RISC_Populate_Queue.insertDisk().');
+				try{
+					
+					if (diskJson.constructor === Array) {
+						var keys = Object.keys(diskJson);
+						for (var k in keys) {
+							var obj=diskJson[k];
+							diskgr.initialize();
+							diskgr.deviceid=deviceid+'';
+							diskgr.devicetype=device;
+							diskgr.disck_tracks_per_cylinder=obj.disck_tracks_per_cylinder;
+							diskgr.disk_cylider_count=obj.disk_cylider_count;
+							diskgr.disk_deviceid=obj.disk_deviceid;
+							diskgr.disk_headcount=obj.disk_headcount;
+							diskgr.disk_interface_type=obj.disk_interface_type;
+							diskgr.disk_media_type=obj.disk_media_type;
+							diskgr.disk_model=obj.disk_model;
+							diskgr.disk_name=obj.disk_name;
+							diskgr.disk_partition_count=obj.disk_partition_count;
+							diskgr.disk_scsi_bus=obj.disk_scsi_bus;
+							diskgr.disk_scsi_logical_unit=obj.disk_scsi_logical_unit;
+							diskgr.disk_scsi_port=obj.disk_scsi_port;
+							diskgr.disk_scsi_target_id=obj.disk_scsi_target_id;
+							diskgr.disk_sector_count=obj.disk_sector_count;
+							diskgr.disk_sectors_per_track=obj.disk_sectors_per_track;
+							diskgr.disk_size_bytes=obj.disk_size_bytes;
+							diskgr.disk_status=obj.disk_status;
+							diskgr.disk_track_count=obj.disk_track_count;
+							diskgr.insert();
+							
+						}
+					}
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.insertDisk(). Error:- '+e);
+				}
+			},
+			
+			insertHba: function(hbagr,hbaJson, id, device) {
+				
+				this.loggr.debug('Inside RISC_Populate_Queue.insertHba().');
+				try{
+					var dev = device;
+					if (hbaJson.constructor === Array) {
+						var keys = Object.keys(hbaJson);
+						for (var k in keys) {
+							var p = hbaJson[k];
+							hbagr.initialize();
+							hbagr.deviceid = id+'';
+							hbagr.device_type = dev;
+							hbagr.bus = p.bus;
+							hbagr.device=p.device;
+							hbagr.driver=p.driver;
+							hbagr.hbakey=p.hbakey;
+							hbagr.model=p.model;
+							hbagr.nodewwn=p.nodewwn;
+							hbagr.pci=p.pci;
+							hbagr.portwwn=p.portwwn;
+							hbagr.speed=p.speed;
+							hbagr.status=p.status;
+							hbagr.insert();
+						}
+					}
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.insertHba(). Error:- '+e);
+				}
+				
+			},
+			removeHba: function(id) {
+				this.loggr.debug('Inside RISC_Populate_Queue.removeHba().');
+				try{
+					var hbagr=new GlideRecord('x_riscn_risc_netwo_risc_hba');
+					hbagr.addQuery('deviceid',id+'');
+					hbagr.setWorkflow(false);
+					hbagr.deleteMultiple();
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.removeHba(). Error:- '+e);
+				}
+				
+			},
+			
+			removeScsilun: function(id) {
+				this.loggr.debug('Inside RISC_Populate_Queue.removeScsilun().');
+				try{
+					var scsilungr=new GlideRecord('x_riscn_risc_netwo_risc_scsilun');
+					scsilungr.addQuery('deviceid',id+'');
+					scsilungr.setWorkflow(false);
+					scsilungr.deleteMultiple();
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.removeScsilun(). Error:- '+e);
+				}
+				
+			},
+			
+			insertScsilun: function(scsilungr,scsilunJson, id, device) {
+				
+				this.loggr.debug('Inside RISC_Populate_Queue.insertScsilun().');
+				try{
+					var dev = device;
+					if (scsilunJson.constructor === Array) {
+						var keys = Object.keys(scsilunJson);
+						for (var k in keys) {
+							var p = scsilunJson[k];
+							scsilungr.initialize();
+							scsilungr.deviceid = id+'';
+							scsilungr.device_type = dev;
+							scsilungr.canonicalname=p.canonicalname;
+							scsilungr.displayname=p.displayname;
+							scsilungr.luntype=p.luntype;
+							scsilungr.model=p.model;
+							scsilungr.operationalstate=p.operationalstate;
+							scsilungr.queuedepth=p.queuedepth;
+							scsilungr.scsikey=p.scsikey;
+							scsilungr.scsilevel=p.scsilevel;
+							scsilungr.serialnumber=p.serialnumber;
+							scsilungr.vendor=p.vendor;
+							scsilungr.insert();
+						}
+					}
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.insertScsilun(). Error:- '+e);
+				}
+				
+			},
+			
+			
+			removeIp: function(id) {
+				this.loggr.debug('Inside RISC_Populate_Queue.removeIp().');
+				try{
+					var ipgr = new GlideRecord("x_riscn_risc_netwo_risc_ips");
+					ipgr.addQuery('device_id',id+'');
+					ipgr.setWorkflow(false);
+					ipgr.deleteMultiple();
+					
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.removeIp(). Error:- '+e);
+				}
+				
+			},
+			insertIp: function(ipgr, ipJson, id, device, dvce) {
+				this.loggr.debug('Inside RISC_Populate_Queue.insertIp().');
+				try{
+					var dev = device;
+					if (ipJson.constructor === Array && (id!=0 || id!="0")) {
+						var keys = Object.keys(ipJson);
+						for (var k in keys) {
+							var p = ipJson[k];
+							ipgr.initialize();
+							ipgr.device_id = id+'';
+							ipgr.devicetype = dev;
+							ipgr.ip = p.ip;
+							ipgr.insert();
+													
+							dvce.addIp(p.ip);							
+						}
+					}
+					
+					return dvce;
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.insertIp(). Error:- '+e);
+				}
+				
+			},
+			removeInterface: function(dev, id) {
+				this.loggr.debug('Inside RISC_Populate_Queue.removeInterface().');
+				try{
+					var interfacegr = '';
+					if( dev == 'Network Infrastructure' || dev == 'Linux and Unix Devices' || dev == 'Virtual Machines'){
+						interfacegr = new GlideRecord('x_riscn_risc_netwo_risc_network_interface');
+					}else if(dev == 'VMware Hosts'){
+						interfacegr=new GlideRecord('x_riscn_risc_netwo_risc_vmware_host_interfaces');
+					}else if(dev=='Windows Servers'){
+						interfacegr=new GlideRecord('x_riscn_risc_netwo_risc_windows_server_interface');
+					} else {
+						interfacegr = new GlideRecord('x_riscn_risc_netwo_risc_interfaces');
+					}
+					interfacegr.addQuery('device_id',id+'');
+					interfacegr.setWorkflow(false);
+					interfacegr.deleteMultiple();
+					
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.removeInterface(). Error:- '+e);
+				}
+				
+			},
+			
+			insertInterface: function(interfacegr, interfaceJson, id, device, dvce) {
+				var ipmask2;
+				this.loggr.debug('Inside RISC_Populate_Queue.insertInterface().');
+				try{
+					var dev = device;
+					if (interfaceJson.constructor === Array) {
+						var keys = Object.keys(interfaceJson);
+						var ifc = '';
+						var k;
+						if( device == 'Network Infrastructure' ){
+							
+							for (k in keys) {
+								ifc = interfaceJson[k];
+								interfacegr.initialize();
+								interfacegr.device_id = id+'';
+								interfacegr.deivce_type = dev;
+								interfacegr.admin_status = ifc.interface_admin_status;
+								interfacegr.description = ifc.interface_description;
+								interfacegr.index = ifc.interface_index;
+								interfacegr.mac = ifc.interface_mac;
+								interfacegr.name = ifc.interface_name;
+								interfacegr.oper_status = ifc.interface_oper_status;
+								interfacegr.speed = ifc.interface_speed;
+								interfacegr.type = ifc.interface_type;
+								interfacegr.id = ifc.interfaceid+'';
+								interfacegr.id = ifc.ips;
+								interfacegr.id = ifc.masks;
+								interfacegr.insert();
+								
+								dvce.addMac(ifc.interface_mac);
+								dvce.addIp(ifc.ips);								
+							}
+							
+						} else if( device == 'Linux and Unix Devices'){
+							
+							for (k in keys) {
+								ifc = interfaceJson[k];
+									interfacegr.initialize();
+								interfacegr.device_id = id+'';
+								interfacegr.deivce_type = device;
+								if(ifc.interface_admin_status)
+									interfacegr.admin_status = ifc.interface_admin_status;								
+								if(ifc.interface_description)
+									interfacegr.description = ifc.interface_description;
+								if(ifc.interface_mac_address){
+									interfacegr.mac = ifc.interface_mac_address;
+									dvce.addMac(ifc.interface_mac_address);
+								}									
+								if(ifc.interface_oper_status)
+									interfacegr.oper_status = ifc.interface_oper_status;
+								if(ifc.interface_speed)
+									interfacegr.speed = ifc.interface_speed;
+								if(ifc.interface_type)
+									interfacegr.type = ifc.interface_type;
+								if(ifc.connected)
+									interfacegr.connected = ifc.connected;
+								if(ifc.mac){			
+									interfacegr.mac = ifc.mac;
+
+								dvce.addMac(ifc.mac);			
+								}									
+								if(ifc.network)
+									interfacegr.network = ifc.network;
+								if(ifc.ips){
+									var arr = this.insertInterfaceIP(ifc.ips, id, dvce);
+									ipmask2= arr[0];									
+									interfacegr.ips=ipmask2;
+									dvce = arr[1];
+								}
+								
+								interfacegr.insert();
+							}
+							
+						}else if( device == 'Virtual Machines' ){
+							
+							for (k in keys) {
+								ifc = interfaceJson[k];
+									interfacegr.initialize();
+								interfacegr.device_id = id+'';
+								interfacegr.deivce_type = device;
+								if(ifc.interface_admin_status)
+									interfacegr.admin_status = ifc.interface_admin_status;
+								if(ifc.interface_description)
+									interfacegr.description = ifc.interface_description;
+								if(ifc.interface_mac_address){
+									interfacegr.mac = ifc.interface_mac_address;
+									dvce.addMac(ifc.interface_mac_address);
+								}
+								if(ifc.interface_oper_status)
+									interfacegr.oper_status = ifc.interface_oper_status;
+								if(ifc.interface_speed)
+									interfacegr.speed = ifc.interface_speed;
+								if(ifc.interface_type)
+									interfacegr.type = ifc.interface_type;
+								if(ifc.connected)
+									interfacegr.connected = ifc.connected;
+								if(ifc.mac){
+									interfacegr.mac = ifc.mac;
+									dvce.addMac(ifc.mac);			
+								}
+								if(ifc.network)
+									interfacegr.network = ifc.network;
+								if(ifc.ips){						
+									var arr = this.insertInterfaceIP(ifc.ips, id, dvce);
+									ipmask2= arr[0];
+									interfacegr.ips=ipmask2;
+									dvce = arr[1];
+								}
+								interfacegr.insert();
+								
+							}
+							
+						}
+						
+						else if(device=='Windows Servers' || device=='Windows Workstations')
+							{
+							for(k in keys){
+								ifc=interfaceJson[k];
+									interfacegr.initialize();
+								interfacegr.device_id = id+'';
+								interfacegr.deivce_type = device;
+								if(ifc.interface_default_tos)
+									interfacegr.interface_default_tos=ifc.interface_default_tos;
+								if(ifc.interface_description)
+									interfacegr.interface_description=ifc.interface_description;
+								if(ifc.interface_dhcp_enabled)
+									interfacegr.interface_dhcp_enabled=ifc.interface_dhcp_enabled;
+								if(ifc.interface_dhcp_lease_expires)
+									interfacegr.interface_dhcp_lease_expires=ifc.interface_dhcp_lease_expires;
+								if(ifc.interface_dhcp_lease_obtained)
+									interfacegr.interface_dhcp_lease_obtained=ifc.interface_dhcp_lease_obtained;
+								if(ifc.interface_dhcp_server)
+									interfacegr.interface_dhcp_server=ifc.interface_dhcp_server;
+								if(ifc.interface_dns_domain)
+									interfacegr.interface_dns_domain=ifc.interface_dns_domain;
+								if(ifc.interface_dns_hostname)
+									interfacegr.interface_dns_hostname=ifc.interface_dns_hostname;
+								if(ifc.interface_index)
+									interfacegr.interface_index=ifc.interface_index;
+								if(ifc.interface_mac){
+									interfacegr.interface_mac=ifc.interface_mac;
+									dvce.addMac(ifc.interface_mac);
+								}
+								if(ifc.interface_manufacturer)
+									interfacegr.interface_manufacturer=ifc.interface_manufacturer;
+								if(ifc.interface_name)
+									interfacegr.interface_name=ifc.interface_name;
+								if(ifc.interface_network_connection_id)
+									interfacegr.interface_network_connection_id=ifc.interface_network_connection_id;
+								if(ifc.interface_type)
+									interfacegr.interface_type=ifc.interface_type;
+								if(ifc.connected)
+									interfacegr.connected = ifc.connected;
+								if(ifc.mac){
+									interfacegr.mac = ifc.mac;
+									dvce.addMac(ifc.mac);	
+								}									
+								if(ifc.network)
+									interfacegr.network = ifc.network;
+								
+								if(ifc.ips){			
+									var arr = this.insertInterfaceIP(ifc.ips, id, dvce);
+									ipmask= arr[0];
+									interfacegr.ips=ipmask;
+									dvce = arr[1];
+								}
+								interfacegr.insert();
+							}
+						}
+						
+						
+						else if(device == 'VMware Hosts'){
+							
+							for(k in keys){
+								ifc=interfaceJson[k];
+									interfacegr.initialize();
+								interfacegr.device_id = id+'';
+								interfacegr.deivce_type = dev;
+								interfacegr.autonegotiatesupported=ifc.autonegotiatesupported;
+								interfacegr.device=ifc.device;
+								interfacegr.driver=ifc.driver;
+								interfacegr.duplex=ifc.duplex;
+								interfacegr.mac=ifc.mac;
+								interfacegr.pci=ifc.pci;
+								interfacegr.pnickey=ifc.pnickey;
+								interfacegr.resourcepoolschedulerallowed=ifc.resourcepoolschedulerallowed;
+								interfacegr.speedmb=ifc.speedmb;
+								interfacegr.vmdirectpathgen2supported=ifc.vmdirectpathgen2supported;
+								interfacegr.wakeonlansupported=ifc.wakeonlansupported;
+								interfacegr.insert();
+								
+								dvce.addMac(ifc.mac);
+							}
+							
+						} else {
+							
+							for (k in keys) {
+								ifc = interfaceJson[k];
+									interfacegr.initialize();
+								interfacegr.device_id = id+'';
+								interfacegr.devicetype = dev;
+								interfacegr.connected = ifc.connected;
+								interfacegr.mac_address = ifc.mac;
+								interfacegr.network = ifc.network;
+								interfacegr.insert();
+								
+								dvce.addMac(ifc.mac);
+							}
+							
+						}
+						
+					}
+					
+					return dvce;
+					
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.insertInterface(). Error:- '+e);
+				}
+				
+			},
+			insertInterfaceIP:function(ipsJson, id, dvce)
+			{
+				this.loggr.debug('Inside RISC_Populate_Queue.insertInterfaceIP().');
+				try{
+					var str='';
+					if (ipsJson.constructor === Array) {
+						var keys = Object.keys(ipsJson);
+						var ifc = '';
+						var k;
+						
+						for(k in keys)
+							{
+							ifc=ipsJson[k];
+							var record='IP :- '+ifc.ip+'     Mask :- '+ifc.mask;
+							str=str+record+'\n';
+							
+							dvce.addIp(ifc.ip);
+						}
+					}					
+					return [str, dvce];
+				}
+				catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.insertInterfaceIP(). Error:- '+e);
+				}
+				
+			},
+			removeEntity: function(id) {
+				this.loggr.debug('Inside RISC_Populate_Queue.removeEntity().');
+				try{
+					var entityGlide = new GlideRecord("x_riscn_risc_netwo_risc_network_entity");
+					entityGlide.addQuery('device_id',id+'');
+					entityGlide.setWorkflow(false);
+					entityGlide.deleteMultiple();
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.removeEntity(). Error:- '+e);
+				}
+				
+			},
+			
+			insertEntity: function(entityGlide, entityJson, id, device) {
+				
+				this.loggr.debug('Inside RISC_Populate_Queue.insertEntity().');
+				try{
+					var dev = device;
+					if (entityJson.constructor === Array) {
+						var keys = Object.keys(entityJson);
+						for (var k in keys) {
+							var p = entityJson[k];
+							entityGlide.initialize();
+							entityGlide.device_id = id+'';
+							entityGlide.device_type = dev;
+							entityGlide.entity_class = p.entity_class;
+							entityGlide.description = p.entity_description;
+							entityGlide.firmware_version = p.entity_firmware_version;
+							entityGlide.hardware_version = p.entity_hardware_version;
+							entityGlide.model = p.entity_model;
+							entityGlide.serial = p.entity_serial;
+							entityGlide.software_version = p.entity_software_version;
+							entityGlide.entity_name = p.entity_name;
+							entityGlide.insert();
+						}
+					}
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.insertEntity(). Error:- '+e);
+				}
+				
+			},
+			removeStorage: function(id) {
+				this.loggr.debug('Inside RISC_Populate_Queue.removeStorage().');
+				try{
+					var grStorage = new GlideRecord('x_riscn_risc_netwo_risc_linux_and_unix_storage');
+					grStorage.addQuery('device_id',id+'');
+					grStorage.setWorkflow(false);
+					grStorage.deleteMultiple();
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.removeStorage(). Error:- '+e);
+				}
+				
+			},
+			
+			insertStorage: function(grStorage,storageJson, id, device) {
+				this.loggr.debug('Inside RISC_Populate_Queue.insertStorage().');
+				try{
+					var dev = device;
+					if (storageJson.constructor === Array) {
+						var keys = Object.keys(storageJson);
+						for (var k in keys) {
+							var objStorage = storageJson[k];
+							grStorage.initialize();
+							grStorage.device_id = id+'';
+							grStorage.device_type = dev;
+							grStorage.storage_description = objStorage.storage_description;
+							grStorage.storage_size_bytes = objStorage.storage_size_bytes;
+							grStorage.storage_used_bypes = objStorage.storage_used_bytes;
+							grStorage.insert();
+						}
+					}
+				}catch(e){
+					this.loggr.error('Error Caught inside RISC_Populate_Queue.insertStorage(). Error:- '+e);
+				}
+				
+			},
+			
+			
+			parseJson: function(responseBody) {
+				
+				return JSON.parse(responseBody);
+			},
+			
+			type: 'RISC_Populate_Queue'
+		};
+
+
+
+function Device(){
+	this.id='';
+	this.serialNo='';
+	this.macs=[];
+	this.ips=[];	
+	
+	this.addMac = function(mac){
+		if(mac != '(null)' && mac != null && mac != 'null' && mac != 'NULL' && mac )
+			if(this.macs.indexOf(mac.toLowerCase()) == -1)
+				this.macs.push(mac.toLowerCase());
+	};
+	
+	this.addIp = function(ip){
+		if(ip != '(null)' && ip != null && ip != 'null' && ip != 'NULL' && ip )
+			if(this.ips.indexOf(ip.toLowerCase()) == -1)
+				this.ips.push(ip.toLowerCase());
+	};
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-30 10:56:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bf13423edbc607006cded5f0cf96190e</sys_id>
+        <sys_mod_count>448</sys_mod_count>
+        <sys_name>RISC_Populate_Queue</sys_name>
+        <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+        <sys_update_name>sys_script_include_bf13423edbc607006cded5f0cf96190e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-18 15:31:49</sys_updated_on>
+    </sys_script_include>
+</record_update>

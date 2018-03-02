@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="addnewtag" table="x_riscn_risc_netwo_risc_windows_servers" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>addnewtag</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Select New Tag</label>
+            <language>en</language>
+            <name>x_riscn_risc_netwo_risc_windows_servers</name>
+            <sequence>0</sequence>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-06 10:59:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2e178285db1e83006cded5f0cf961965</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-11-06 10:59:19</sys_updated_on>
+            <value>Select New Tag</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>addnewtag</element>
+            <name>x_riscn_risc_netwo_risc_windows_servers</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-11-06 10:59:19</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>814d0746db33c300aad3110b0b96190c</sys_id>
+            <sys_mod_count>11</sys_mod_count>
+            <sys_name>addnewtag</sys_name>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_choice_x_riscn_risc_netwo_risc_windows_servers_addnewtag</sys_update_name>
+            <sys_updated_by>girishgyani</sys_updated_by>
+            <sys_updated_on>2018-01-08 08:35:25</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

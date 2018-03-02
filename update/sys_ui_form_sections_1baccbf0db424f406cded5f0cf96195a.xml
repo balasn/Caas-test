@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="1baccbf0db424f406cded5f0cf96195a" sys_domain="global" table="x_riscn_risc_netwo_risc_inaccessible_devies" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-24 11:09:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>57accbf0db424f406cded5f0cf96195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_inaccessible_devies" name="x_riscn_risc_netwo_risc_inaccessible_devies" sys_domain="global" view="Default view">1baccbf0db424f406cded5f0cf96195a</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_riscn_risc_netwo_risc_inaccessible_devies" sys_domain="global" view="Default view">17accbf0db424f406cded5f0cf96195c</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-10-24 11:09:07</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-24 11:09:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2baccbf0db424f406cded5f0cf961961</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_inaccessible_devies" name="x_riscn_risc_netwo_risc_inaccessible_devies" sys_domain="global" view="Default view">1baccbf0db424f406cded5f0cf96195a</sys_ui_form>
+            <sys_ui_section caption="Guest" display_value="Guest" name="x_riscn_risc_netwo_risc_inaccessible_devies" sys_domain="global" view="Default view">5baccbf0db424f406cded5f0cf96195e</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-26 13:45:54</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-24 15:51:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2d6d4ccddb064f406cded5f0cf9619b5</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_inaccessible_devies" name="x_riscn_risc_netwo_risc_inaccessible_devies" sys_domain="global" view="Default view">1baccbf0db424f406cded5f0cf96195a</sys_ui_form>
+            <sys_ui_section caption="CPU Details" display_value="CPU Details" name="x_riscn_risc_netwo_risc_inaccessible_devies" sys_domain="global" view="Default view">6d6d4ccddb064f406cded5f0cf9619ad</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-26 13:45:54</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>Aakashjit</sys_created_by>
+            <sys_created_on>2017-10-24 15:57:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8fae8801db464f406cded5f0cf96196e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_riscn_risc_netwo_risc_inaccessible_devies" name="x_riscn_risc_netwo_risc_inaccessible_devies" sys_domain="global" view="Default view">1baccbf0db424f406cded5f0cf96195a</sys_ui_form>
+            <sys_ui_section caption="Other Details" display_value="Other Details" name="x_riscn_risc_netwo_risc_inaccessible_devies" sys_domain="global" view="Default view">c3ae8801db464f406cded5f0cf96196c</sys_ui_section>
+            <sys_updated_by>Aakashjit</sys_updated_by>
+            <sys_updated_on>2017-10-24 15:57:27</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_riscn_risc_netwo_risc_inaccessible_devies</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-24 11:09:07</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1baccbf0db424f406cded5f0cf96195a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_riscn_risc_netwo_risc_inaccessible_devies</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_form_sections_1baccbf0db424f406cded5f0cf96195a</sys_update_name>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-10-24 11:09:07</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

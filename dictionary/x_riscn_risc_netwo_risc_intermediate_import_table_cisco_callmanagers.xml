@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_riscn_risc_netwo_risc_intermediate_import" label="RISC Intermediate Import Table Cisco Callmanagers" max_length="40" name="x_riscn_risc_netwo_risc_intermediate_import_table_cisco_callmanagers" type="collection"/>
+</database>

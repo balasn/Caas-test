@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="RISC Basic Devices">d1c3965edbb9c7406cded5f0cf96191c</map>
+        <order>101</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+	// Add your code here
+	//var ignore=true;
+ var deviceType = source.generic_device_type;
+	//gs.addInfoMessage(deviceType);
+	//if(deviceType != 'Basic Devices'||
+	if( deviceType != 'Basic Devices' ){
+		//gs.addInfoMessage(deviceType+'2');
+		ignore =true;}
+	
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-16 13:42:39</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a70326dadbf9c7406cded5f0cf961927</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>onBefore</sys_name>
+        <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+        <sys_update_name>sys_transform_script_a70326dadbf9c7406cded5f0cf961927</sys_update_name>
+        <sys_updated_by>Aakashjit</sys_updated_by>
+        <sys_updated_on>2017-11-02 05:55:57</sys_updated_on>
+        <when>onBefore</when>
+    </sys_transform_script>
+</record_update>

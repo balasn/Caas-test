@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Risc Netwo M2m Risc Basic D Risc Stacks" max_length="40" name="x_riscn_risc_netwo_m2m_risc_basic_d_risc_stacks" type="collection">
+        <element label="RISC Basic Devices" max_length="32" name="risc_basic_devices" reference="x_riscn_risc_netwo_risc_basic_devices" type="reference"/>
+        <index name="index">
+            <element name="risc_basic_devices"/>
+        </index>
+    </element>
+</database>

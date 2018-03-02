@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Configuration" section_id="8249a58fdbb94b40e3b55421cf961974" sys_domain="global" table="x_riscn_risc_netwo_risc_network_infrastructure" version="3" view="certification">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>device_type</element>
+            <position>0</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-18 17:25:29</sys_created_on>
+            <sys_id>0e49a58fdbb94b40e3b55421cf961974</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Configuration" display_value="Configuration" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="d62ead22df100100cd7da5f59bf26356">8249a58fdbb94b40e3b55421cf961974</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-10-18 17:25:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>location</element>
+            <position>1</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-18 17:25:29</sys_created_on>
+            <sys_id>8e49a58fdbb94b40e3b55421cf961974</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Configuration" display_value="Configuration" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="d62ead22df100100cd7da5f59bf26356">8249a58fdbb94b40e3b55421cf961974</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-10-18 17:25:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ports</element>
+            <position>2</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-18 17:25:29</sys_created_on>
+            <sys_id>0249a58fdbb94b40e3b55421cf961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Configuration" display_value="Configuration" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="d62ead22df100100cd7da5f59bf26356">8249a58fdbb94b40e3b55421cf961974</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-10-18 17:25:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>channels</element>
+            <position>3</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-18 17:25:29</sys_created_on>
+            <sys_id>8249a58fdbb94b40e3b55421cf961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Configuration" display_value="Configuration" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="d62ead22df100100cd7da5f59bf26356">8249a58fdbb94b40e3b55421cf961974</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-10-18 17:25:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ip_address</element>
+            <position>4</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-18 17:25:29</sys_created_on>
+            <sys_id>0649a58fdbb94b40e3b55421cf961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Configuration" display_value="Configuration" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="d62ead22df100100cd7da5f59bf26356">8249a58fdbb94b40e3b55421cf961974</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-10-18 17:25:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-18 17:25:29</sys_created_on>
+            <sys_id>8649a58fdbb94b40e3b55421cf961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Configuration" display_value="Configuration" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="d62ead22df100100cd7da5f59bf26356">8249a58fdbb94b40e3b55421cf961974</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-10-18 17:25:29</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bandwidth</element>
+            <position>6</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-18 17:25:29</sys_created_on>
+            <sys_id>0a49a58fdbb94b40e3b55421cf961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Configuration" display_value="Configuration" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="d62ead22df100100cd7da5f59bf26356">8249a58fdbb94b40e3b55421cf961974</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-10-18 17:25:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpu_manufacturer</element>
+            <position>7</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-18 17:25:29</sys_created_on>
+            <sys_id>8a49a58fdbb94b40e3b55421cf961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Configuration" display_value="Configuration" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="d62ead22df100100cd7da5f59bf26356">8249a58fdbb94b40e3b55421cf961974</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-10-18 17:25:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>firmware_manufacturer</element>
+            <position>8</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-18 17:25:29</sys_created_on>
+            <sys_id>0e49a58fdbb94b40e3b55421cf961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Configuration" display_value="Configuration" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="d62ead22df100100cd7da5f59bf26356">8249a58fdbb94b40e3b55421cf961974</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-10-18 17:25:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>firmware_version</element>
+            <position>9</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-18 17:25:29</sys_created_on>
+            <sys_id>9e49a58fdbb94b40e3b55421cf961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Configuration" display_value="Configuration" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="d62ead22df100100cd7da5f59bf26356">8249a58fdbb94b40e3b55421cf961974</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-10-18 17:25:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>10</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-18 17:25:29</sys_created_on>
+            <sys_id>1249a58fdbb94b40e3b55421cf961976</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Configuration" display_value="Configuration" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="d62ead22df100100cd7da5f59bf26356">8249a58fdbb94b40e3b55421cf961974</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-10-18 17:25:29</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ui_ng_relation_formatter.xml</element>
+            <position>11</position>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-18 17:25:29</sys_created_on>
+            <sys_id>9249a58fdbb94b40e3b55421cf961976</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Configuration" display_value="Configuration" name="x_riscn_risc_netwo_risc_network_infrastructure" sys_domain="global" view="d62ead22df100100cd7da5f59bf26356">8249a58fdbb94b40e3b55421cf961974</sys_ui_section>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-10-18 17:25:29</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Configuration</caption>
+            <header>false</header>
+            <name>x_riscn_risc_netwo_risc_network_infrastructure</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>mumtaz.ansari</sys_created_by>
+            <sys_created_on>2017-10-18 17:25:29</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8249a58fdbb94b40e3b55421cf961974</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Configuration</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="RISC Networks" source="x_riscn_risc_netwo">e1ae8eb4dba54f00e3b55421cf9619e7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="RISC Networks">e1ae8eb4dba54f00e3b55421cf9619e7</sys_scope>
+            <sys_update_name>sys_ui_section_8249a58fdbb94b40e3b55421cf961974</sys_update_name>
+            <sys_updated_by>mumtaz.ansari</sys_updated_by>
+            <sys_updated_on>2017-10-18 17:25:29</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Compliance" name="certification">d62ead22df100100cd7da5f59bf26356</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

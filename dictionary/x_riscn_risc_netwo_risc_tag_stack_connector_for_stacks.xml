@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC Tag Stack Connector For Stacks" max_length="40" name="x_riscn_risc_netwo_risc_tag_stack_connector_for_stacks" type="collection">
+        <element label="Stack ID" max_length="40" name="stackid" type="string"/>
+        <element label="Tag ID" max_length="40" name="tagid" type="string"/>
+    </element>
+</database>

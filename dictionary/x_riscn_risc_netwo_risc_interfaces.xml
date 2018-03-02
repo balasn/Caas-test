@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC Interfaces" max_length="40" name="x_riscn_risc_netwo_risc_interfaces" type="collection">
+        <element label="Connected" max_length="40" name="connected" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device Type" max_length="40" name="devicetype" type="string"/>
+        <element display="true" label="Device ID" max_length="40" name="device_id" type="string"/>
+        <element label="MAC Address" max_length="40" name="mac_address" type="string"/>
+        <element label="Network" max_length="40" name="network" type="string"/>
+    </element>
+</database>

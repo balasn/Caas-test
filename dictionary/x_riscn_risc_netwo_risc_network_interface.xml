@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RISC Interface" max_length="40" name="x_riscn_risc_netwo_risc_network_interface" type="collection">
+        <element label="Admin Status" max_length="10" name="admin_status" type="string"/>
+        <element label="Connected" max_length="40" name="connected" type="string"/>
+        <element label="Device Type" max_length="100" name="deivce_type" type="string"/>
+        <element label="Description" max_length="150" name="description" type="string"/>
+        <element label="Device Id" max_length="100" name="device_id" type="string"/>
+        <element label="Id" max_length="20" name="id" type="string"/>
+        <element label="Index" max_length="50" name="index" type="string"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="IPs" max_length="1024" name="ips" type="string"/>
+        <element label="Mac" max_length="100" name="mac" type="string"/>
+        <element label="Name" max_length="150" name="name" type="string"/>
+        <element label="Network" max_length="40" name="network" type="string"/>
+        <element label="Oper Status" max_length="50" name="oper_status" type="string"/>
+        <element label="Speed" max_length="50" name="speed" type="string"/>
+        <element label="type" max_length="50" name="type" type="string"/>
+    </element>
+</database>

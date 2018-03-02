@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="RISC Intermediate Import" max_length="40" name="x_riscn_risc_netwo_risc_intermediate_import" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Bulletin URL" max_length="1000" name="bulletin_url" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Chasis Serial Array" max_length="100" name="chassis_serial_array" type="string"/>
+        <element label="Collection Type" max_length="100" name="collection_type" type="string"/>
+        <element label="CPU hz" max_length="100" name="cpuhz" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="CPU Architecture" max_length="100" name="cpu_architecture" type="string"/>
+        <element label="CPU Count" max_length="100" name="cpu_count" type="string"/>
+        <element label="CPU Frequency" max_length="100" name="cpu_frequency" type="string"/>
+        <element label="CPU Frequqency" max_length="100" name="cpu_frequqency" type="string"/>
+        <element label="CPU Model" max_length="100" name="cpu_model" type="string"/>
+        <element label="CPU Reservation" max_length="100" name="cpu_reservation" type="string"/>
+        <element label="Device Id" max_length="1000000" name="deviceid" type="string"/>
+        <element label="Device Type" max_length="100" name="devicetype" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Dist Full" max_length="100" name="dist_full" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="End Of Life Date" max_length="100" name="end_of_life_date" type="string"/>
+        <element label="ESX Host" max_length="100" name="esx_host" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Family" max_length="100" name="family" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Feature Set" max_length="100" name="feature_set" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Firmware Version" max_length="1000" name="firmware_version" type="string"/>
+        <element label="Generic Device Type" max_length="100" name="generic_device_type" type="string"/>
+        <element label="Guest Name" max_length="100" name="guest_name" type="string"/>
+        <element label="Guest OS" max_length="100" name="guest_os" type="string"/>
+        <element label="Hardware Model" max_length="100" name="hardware_model" type="string"/>
+        <element label="Hardware Serial" max_length="100" name="hardware_serial" type="string"/>
+        <element label="Hardware Vendor" max_length="100" name="hardware_vendor" type="string"/>
+        <element label="Hostname" max_length="100" name="hostname" type="string"/>
+        <element label="IP Address" max_length="40" name="identifying_ip" type="string"/>
+        <element label="MAC Address" max_length="40" name="identifying_mac" type="string"/>
+        <element label="Licensed" max_length="100" name="licensed" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Lifecycle State" max_length="40" name="lifecycle_state" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Location" max_length="100" name="location" type="string"/>
+        <element label="Long Description" max_length="1000" name="long_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Manufacturer" max_length="100" name="manufacturer" type="string"/>
+        <element label="Memory" max_length="100" name="memory" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Model" max_length="100" name="model" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Model Description" max_length="1000" name="model_description" type="string"/>
+        <element label="OS" max_length="100" name="os" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="os_bulletin_url" max_length="1000" name="os_bulletin_url" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="os_end_of_extended_support" max_length="100" name="os_end_of_extended_support" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="os_end_of_mainstream_support" max_length="100" name="os_end_of_mainstream_support" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="os_hardware_model" max_length="100" name="os_hardware_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="os_lifecycle_start_date" max_length="40" name="os_lifecycle_start_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="os_lifecycle_status" max_length="40" name="os_lifecycle_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="os_os" max_length="40" name="os_os" type="string"/>
+        <element label="OS Version" max_length="100" name="os_version" type="string"/>
+        <element label="Power State" max_length="100" name="power_state" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Processor RAM" max_length="100" name="processor_ram" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Retired Date" max_length="40" name="retired_date" type="string"/>
+        <element label="Scan Time" max_length="100" name="scantime" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Serial Number" max_length="100" name="serial_number" type="string"/>
+        <element label="Service Pack" max_length="100" name="service_pack" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Software Version" max_length="100" name="software_version" type="string"/>
+        <element label="Stacks" max_length="100000000" name="stacks" type="string"/>
+        <element label="Status" max_length="100" name="status" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys Description" max_length="1000" name="sysdescription" type="string"/>
+        <element label="Tags" max_length="10000000" name="tags" type="string"/>
+        <element label="Tool Status" max_length="100" name="tool_status" type="string"/>
+        <element label="uuid" max_length="100" name="uuid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Vendor" max_length="100" name="vendor" type="string"/>
+        <element label="Version" max_length="100" name="version" type="string"/>
+        <element label="Version Detail" max_length="100" name="versiondetail" type="string"/>
+    </element>
+</database>
